@@ -12,17 +12,17 @@ return (
 
         <h2 className="anim-typewriter Display-1" style={{fontFamily:'Open Sans', color:'white', fontSize:'4.5vw'}}>Software Developer | Full-Stack</h2>
 </div>
-<div className="NavBar" style={{marginTop:'50px'}}>
-    <a href="/Aboutme/" className="ButtonBorder">
+<div className="NavBar" style={{marginTop:'50px', width:'100%', height:'60px'}}>
+    <a href="/Aboutme/" className="ButtonBorder2">
     <p style={{ backgroundColor:'transparent', color:'turquoise'}}>About Me</p>
     </a>
-    <a href="/Projects/" className="ButtonBorder">
+    <a href="/Projects/" className="ButtonBorder2">
     <p style={{ backgroundColor:'transparent', color:'turquoise'}}>Projects</p>
     </a>
-    <a href="/Skills/"className="ButtonBorder">
+    <a href="/Skills/"className="ButtonBorder2">
     <p style={{ backgroundColor:'transparent', color:'turquoise'}}>Skills</p>
     </a>
-    <a href="/Contact/" className="ButtonBorder">
+    <a href="/Contact/" className="ButtonBorder2">
     <p  style={{ backgroundColor:'transparent', color:'turquoise'}}>Contact</p>
     </a>
 </div>
