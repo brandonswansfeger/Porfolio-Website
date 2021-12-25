@@ -31,9 +31,9 @@ const ContactForm = () => {
           type="text"
           placeholder="Your name"
           name="name"
-          className="px-3 py-3 rounded text-md"
+          className="px-3 py-3 rounded text-md FormControl"
           required
-          style={{backgroundColor:'rgb(0,0,0,.5)', placeholder:'black', border:'1pt solid turquoise', width:'300px'}}
+          style={{backgroundColor:'rgb(0,0,0,.5)', color:'turquoise', border:'1pt solid turquoise', width:'300px'}}
         />
       </div>
       <div className="mb-3 pt-0">
@@ -41,18 +41,18 @@ const ContactForm = () => {
           type="email"
           placeholder="Email"
           name="email"
-          className="px-3 py-3 relative bg-rgb(0,0,0,.5) rounded text-md"
+          className="px-3 py-3 relative rounded text-md FormControl"
           required
-          style={{backgroundColor:'rgb(0,0,0,.5)', placeholder:'black', border:'1pt solid turquoise', width:'300px'}}
+          style={{backgroundColor:'rgb(0,0,0,.5)', color:'turquoise', border:'1pt solid turquoise', width:'300px'}}
         />
       </div>
       <div className="mb-3 pt-0">
         <textarea
           placeholder="Your message"
           name="message"
-          className="px-3 py-3 rounded text-md"
+          className="px-3 py-3 rounded text-md FormControl"
           required
-          style={{backgroundColor:'rgb(0,0,0,.5)', placeholder:'black', border:'1pt solid turquoise', width:'300px', height:'75px'}}
+          style={{backgroundColor:'rgb(0,0,0,.5)', color:'turquoise', border:'1pt solid turquoise', width:'300px', height:'75px'}}
 
         />
       </div>
