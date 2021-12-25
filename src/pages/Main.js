@@ -10,7 +10,7 @@ return (
             brandon swansfeger</span>
         </h1>
 
-        <h2 className="anim-typewriter Display-1" style={{fontFamily:'Open Sans', color:'white', fontSize:'4.5vw'}}>Software Engineer | Full-Stack Developer</h2>
+        <h2 className="anim-typewriter Display-1" style={{fontFamily:'Open Sans', color:'white', fontSize:'4.5vw'}}>Software Developer | Full-Stack</h2>
 </div>
 <div className="NavBar" style={{marginTop:'50px'}}>
     <a href="/Aboutme/" className="ButtonBorder">

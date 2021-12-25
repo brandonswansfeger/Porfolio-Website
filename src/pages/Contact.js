@@ -22,8 +22,8 @@ function Contact() {
     <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginTop:'5%', marginBottom:'3%'}}>Contact Me</p>
     <ContactForm />
     <div className="MediaLinks" style={{display:'flex', flexDirection:'inline', justifyContent:'space-evenly', marginTop:'2%'}}>
-      <a href="https://www.linkedin.com/in/brandonswansfeger"rel="noopener noreferrer" target="_blank"><img className="ImgLink" src={LinkedIn} alt="linkedin"/></a>
-      <a href="https://github.com/brandonswansfeger"rel="noopener noreferrer" target="_blank"><img className="ImgLink" src={Github} alt="linkedin"/></a>
+      <a className="ImgLink" href="https://www.linkedin.com/in/brandonswansfeger"rel="noopener noreferrer" target="_blank"><img src={LinkedIn} alt="linkedin"/></a>
+      <a className="ImgLink" href="https://github.com/brandonswansfeger"rel="noopener noreferrer" target="_blank"><img  src={Github} alt="linkedin"/></a>
 
     </div>
 </div>
