@@ -9,6 +9,26 @@ margin: auto;
 font-size: 12px;
 }
 
+i {
+  margin: 5px;
+  overflow: none;
+  padding: 5px;
+}
+
+.SkillsIcons {
+  display: flex;
+  flex-direction: inline;
+  flex-wrap: wrap;
+  /* width: 80%; */
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  justify-items: center;
+  /* margin-left: 10%;
+  margin-right: 10%; */
+  justify-content: space-evenly;
+  max-width: 600px;
+}
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: turquoise !important;
@@ -26,6 +46,12 @@ font-size: 12px;
 .MainPageBody {
     display: flex;
     flex-direction: inline;
+}
+
+.SkillsBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 div.Container {
@@ -58,7 +84,8 @@ img {
 }
 
 a {
-    text-align: center;
+  display: flex;  
+  text-align: center;
     justify-self: center;
     padding: 5px;
     margin: 5px;
@@ -185,6 +212,11 @@ h2 {
         white-space: nowrap;
         overflow: hidden;
         transform: translateY(-50%);    
+    }
+
+    .FormBody{
+      display: flex;
+      justify-content:space-around;
     }
     
     /* Animation */
