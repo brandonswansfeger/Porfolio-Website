@@ -74,15 +74,19 @@ div.Container {
     align-content: center;
 }
 
-.ButtonBorder:hover{
+.ButtonBorder2 {
+  max-width: 200px;
+  min-width: 50px;
+  width: 150px;
+  border: 1pt solid turquoise;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+}
+.ButtonBorder2:hover{
     background-color:darkblue;
         
 } 
-
-  .FormControl:valid {
-      background-color: gray !important;
-    }
-    
 
 img {
     margin-right: 30px;
@@ -113,6 +117,10 @@ body {
     height: 1000px;
 }
 
+
+.ButtonBorder2 p {
+  font-size: 20px;
+}
 .ProjectsBody {   
     background-color: turquoise;
     width: 100%;
@@ -222,6 +230,10 @@ h2 {
     .FormBody{
       display: flex;
       justify-content:space-around;
+    }
+
+    .FormControl:valid {
+      background-color: gray !important;
     }
     
     /* Animation */
