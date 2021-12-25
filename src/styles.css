@@ -79,6 +79,11 @@ div.Container {
         
 } 
 
+  .FormControl:valid {
+      background-color: gray !important;
+    }
+    
+
 img {
     margin-right: 30px;
 }
