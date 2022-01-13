@@ -74,7 +74,16 @@ div.Container {
     align-content: center;
 }
 
-.ButtonBorder:hover{
+.ButtonBorder2 {
+  max-width: 200px;
+  min-width: 50px;
+  width: 150px;
+  border: 1pt solid turquoise;
+  justify-content: center;
+  display: flex;
+  align-content: center;
+}
+.ButtonBorder2:hover{
     background-color:darkblue;
         
 } 
@@ -108,6 +117,10 @@ body {
     height: 1000px;
 }
 
+
+.ButtonBorder2 p {
+  font-size: 20px;
+}
 .ProjectsBody {   
     background-color: turquoise;
     width: 100%;
@@ -180,6 +193,33 @@ body {
   background-color: navy;
   }
 
+  .GDPimage {
+    -webkit-box-shadow: 4px 6px 15px 9px rgba(0,0,0,0.76);
+    box-shadow: 4px 6px 15px 9px rgba(0,0,0,0.76);
+}
+
+p.Text {
+	background: linear-gradient(-45deg, black, turquoise, black, turquoise);
+	background-size: 300%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: small;
+  line-height: 20px;
+  text-align: center;
+	/*letter-spacing: -5px;
+	*/text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 10s ease-in-out infinite;
+	-moz-animation: animated_text 10s ease-in-out infinite;
+	-webkit-animation: animated_text 10s ease-in-out infinite;
+}
+
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+}
  
 .ProjectCard {
     -webkit-box-shadow: 4px 6px 15px 9px rgba(0,0,0,0.76);
@@ -188,12 +228,31 @@ body {
     flex-direction: column;
     background-color: white;
     height: 475px;
+    width: 280px;
     /* border: 2px solid .080808; */
     border-radius: 20px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin: 15px;
 }
+ 
+.ProjectCard2 {
+  -webkit-box-shadow: 4px 6px 15px 9px rgba(0,0,0,0.76);
+  box-shadow: 4px 6px 15px 9px rgba(0,0,0,0.76);
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 475px;
+  width: 280px;
+  padding-bottom: 14px;
+  /* border: 2px solid .080808; */
+  border-radius: 20px;
+  /* justify-content: center; */
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px;
+}
+
 h1 {
     margin-bottom: 10px;
 margin-top: -10px;
@@ -221,6 +280,10 @@ h2 {
 
     .FormControl:valid {
       background-color: gray !important;
+    }
+
+    div.ButtonLink1 {
+      margin-top: 20px;
     }
     
     /* Animation */
