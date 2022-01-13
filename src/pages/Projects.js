@@ -8,7 +8,7 @@ export default function Projects() {
          return (
          <div className="ProjectsBody">
 
-        <div className="ProjectCard2">
+           <div className="ProjectCard2">
                 <div style={{width:'260px', marginTop:'10px'}}>
                         <p class="Text"> Python | Django | Matplotlib | Pandas | PostgreSQL </p>
                 </div>
@@ -17,6 +17,9 @@ export default function Projects() {
                 <p style={{fontSize:'18px', color:'black', width:'260px', textAlign:'center', justifySelf:'top', justifyContent:'flexStart', fontWeight:'light', marginTop:'20px', marginBottom:'10px'}}>Fetch external data based on user input and display/render bar chart showing GDP & TFR for all countries</p>
                 <a class="button" href="https://tfr-gdp-bar-chart.herokuapp.com/" data-maxbuttoncounter="{&quot;button_id&quot;:204038,&quot;url&quot;:&quot;[empty]&quot;}" data-maxbuttonpage="{&quot;id&quot;:false,&quot;type&quot;:false}"><span class='mb-text' >Demo</span></a>
                 <a class="button" href="https://github.com/brandonswansfeger/GDP-Bar-Charts" data-maxbuttoncounter="{&quot;button_id&quot;:204038,&quot;url&quot;:&quot;[empty]&quot;}" data-maxbuttonpage="{&quot;id&quot;:false,&quot;type&quot;:false}"><span class='mb-text' >Github</span></a>
+
+            
+       
 
 
         </div>
@@ -34,6 +37,7 @@ export default function Projects() {
         </div>
 </div>
         <div className="ProjectCard">
+
         <div style={{width:'250px', marginTop:'10px', marginBottom:'-5px'}}>
                 <p class="Text"> React JS | Node.JS | Express | <br></br> MongoDB </p>
         </div>
@@ -57,6 +61,9 @@ export default function Projects() {
 <div class="ButtonLink2">
 <a class="button" href="https://github.com/brandonswansfeger/dev-to-dev" data-maxbuttoncounter="{&quot;button_id&quot;:204038,&quot;url&quot;:&quot;[empty]&quot;}" data-maxbuttonpage="{&quot;id&quot;:false,&quot;type&quot;:false}"><span class='mb-text' >Github</span></a>
 </div>
+
+
+       
 
 
         </div>
