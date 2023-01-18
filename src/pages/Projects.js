@@ -30,7 +30,7 @@ export default function Projects() {
         </div>
         <img src={Project1} alt="Project1" width="95%" height="65%"style={{marginLeft:'5px', marginRight:'5px', marginTop:'0'}}/>
         <div class="ButtonLink1">
-                <a class="button" href="https://vaxx-cases-deathg.herokuapp.com/" data-maxbuttoncounter="{&quot;button_id&quot;:204038,&quot;url&quot;:&quot;[empty]&quot;}" data-maxbuttonpage="{&quot;id&quot;:false,&quot;type&quot;:false}"><span class='mb-text' >Demo</span></a>
+                <a class="button" href="https://county-compare-covid-vacc-death-rates.netlify.app/" data-maxbuttoncounter="{&quot;button_id&quot;:204038,&quot;url&quot;:&quot;[empty]&quot;}" data-maxbuttonpage="{&quot;id&quot;:false,&quot;type&quot;:false}"><span class='mb-text' >Demo</span></a>
         </div>
         <div class="ButtonLink2">
                 <a class="button" style={{marginBottom:'15px'}} href="https://github.com/brandonswansfeger/Project-1" data-maxbuttoncounter="{&quot;button_id&quot;:204038,&quot;url&quot;:&quot;[empty]&quot;}" data-maxbuttonpage="{&quot;id&quot;:false,&quot;type&quot;:false}"><span>Github</span></a>
