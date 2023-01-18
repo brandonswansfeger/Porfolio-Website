@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Main () {
 return (
-    <div classname="MainPageBody" style={{backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize:'100% 100%', width:'100%', height:'600px'}}> 
+    <div classname="MainPageBody" style={{backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize:'cover', width:'100%', height:'100vh'}}> 
     <div className="Container">
         <h1>
             <span style={{ textAlign:'center', color:'turquoise', textTransform:'capitalize', fontFamily:'Federo', fontSize:'7vw'}} >

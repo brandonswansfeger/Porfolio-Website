@@ -17,7 +17,7 @@ function Contact() {
 
   return (
     
-    <div className="ContactBody"style={{backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize:'100% 100%', width:'100%', height:'600px'}}>
+    <div className="ContactBody"style={{backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize:'cover', width:'100%', height:'100vh'}}>
     <div style={{display:'flex', flexDirection:'column', justifyContent:'space-around',alignItems:'center'}}>
     <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginTop:'5%', marginBottom:'3%'}}>Contact Me</p>
     <ContactForm />
