@@ -109,8 +109,13 @@ a {
 }
 
 body {
-    background-color: black;
+    background-color: black; 
+    animation: fadeInAnimation ease 10s;
+  animation-delay: 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
+
 
 .AboutBody {
     background-color: rgb(1, 22, 59);
@@ -288,7 +293,16 @@ h2 {
     div.ButtonLink1 {
       margin-top: 20px;
     }
-
+  
+    
+  @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+       }
+  }
     
     /* Animation */
     .anim-typewriter{
