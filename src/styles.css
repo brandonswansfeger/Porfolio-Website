@@ -110,7 +110,7 @@ a {
 
 body {
     background-color: black; 
-    animation: fadeInAnimation ease 10s;
+    animation: fadeInAnimation ease 5s;
   /* animation-delay: 5s; */
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
