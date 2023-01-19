@@ -111,7 +111,7 @@ a {
 body {
     background-color: black; 
     animation: fadeInAnimation ease 10s;
-  animation-delay: 5s;
+  /* animation-delay: 5s; */
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -306,6 +306,7 @@ h2 {
     
     /* Animation */
     .anim-typewriter{
+      animation-delay: 5s;
       animation: typewriter 4s steps(44) 1s 1 normal both,                 blinkTextCursor 500ms steps(44) infinite normal;
       -webkit-animation: typewriter 4s steps(44) 1s 1 normal both,;
 }
