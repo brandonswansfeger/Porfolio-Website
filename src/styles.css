@@ -253,12 +253,19 @@ body {
 
 .AboutBody {
     background-color: rgb(1, 22, 59);
-    width: 100%;
-    height: 100%;
-    padding-top: 0%;
-    padding-bottom: 10%;
+    /* width: 100%;
+    height: 100vh; */
+    /* padding-top: 0%; */
+    /* padding-bottom: 10%; */
 }
-
+.App {
+  text-align: center;
+  display: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  height: 100vh;
+}
 
 .ButtonBorder2 p {
   font-size: 20px;
@@ -442,16 +449,16 @@ margin-top: -10px;
 
 h2 {
         position: relative;
-        top: 50%;  
+        /* top: 50%;   */
         width: 100%;
-        margin-top: 30px;
-        margin-bottom: 0;
+        /* margin-top: 30px; */
+        /* margin-bottom: 0; */
         border-right: 2px solid rgba(255,255,255,.75);
         /* font-size: 180%; */
         text-align: center;
         white-space: nowrap;
         overflow: hidden;
-        transform: translateY(-50%);    
+        /* transform: translateY(-50%);     */
     }
 
     .FormBody{

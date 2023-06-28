@@ -19,6 +19,7 @@ function App() {
 return (
   // {loading ? (
 <div className="App">
+  <div className="MainBody d-flex flex-column justify-content-center h-100 w-100">
   <Nav />
   <Routes>
     <Route exact path="/" element={<Main/>} />
@@ -27,6 +28,9 @@ return (
     <Route path="/skills" element={<Skills/>} />
     <Route path="/Contact" element={<Contact/>} />
  </Routes>
+
+  </div>
+
    </div>
   
   );

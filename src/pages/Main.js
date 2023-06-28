@@ -1,20 +1,19 @@
 import React from "react";
 
 
-export default function Main () {
+export default function Main() {
     return (
-        <div  style={{ backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize: '100% 100%', width: '100%', height: '100vh' }}>
-            <div className="Container" style={{top: '120px'}}>
-                <h1>
-                    <div style={{ textAlign: 'center', color: 'turquoise', textTransform: 'capitalize', fontFamily: 'Federo', fontSize: '7vw', position: 'relative' }} >
-                        brandon swansfeger</div>
-                </h1>
+        <div style={{ backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize: '100% 100%', width: '100%', height: '100vh' }} className="d-flex flex-column justify-content-center">
 
-                <h2 className="anim-typewriter Display-1" style={{ fontFamily: 'Open Sans', color: 'white', fontSize: '4.5vw' }}>Software Developer | Full-Stack</h2>
-            </div>
+            <h1>
+                <div style={{ textAlign: 'center', color: 'turquoise', textTransform: 'capitalize', fontFamily: 'Federo', fontSize: '7vw', position: 'relative' }} >
+                    brandon swansfeger</div>
+            </h1>
+
+            <h2 className="anim-typewriter Display-1" style={{ fontFamily: 'Open Sans', color: 'white', fontSize: '4.5vw' }}>Software Developer | Full-Stack</h2>
             <div className="NavBar2 d-flex flex-wrap justify-content-around" style={{ marginTop: '50px', width: '100%', maxWidth: '700px', marginRight: 'auto', marginLeft: 'auto', height: '50px' }}>
                 <a href="/Aboutme/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
-                    <p style={{ backgroundColor: 'transparent', color: 'turquoise',}}>About</p>
+                    <p style={{ backgroundColor: 'transparent', color: 'turquoise', }}>About</p>
                 </a>
                 <a href="/Projects/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise' }}>Projects</p>
