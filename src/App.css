@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.ProjectCard:hover {
+   transform: scale(120%);
+}

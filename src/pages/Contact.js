@@ -19,7 +19,7 @@ function Contact() {
     
     <div className="ContactBody"style={{backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize:'100% 100%', width:'100%', height:'600px'}}>
     <div style={{display:'flex', flexDirection:'column', justifyContent:'space-around',alignItems:'center'}}>
-    <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginTop:'5%', marginBottom:'3%'}}>Contact Me</p>
+    <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginTop:'60px', marginBottom:'3%'}}>Contact Me</p>
     <ContactForm />
     <div className="MediaLinks" style={{display:'flex', flexDirection:'inline', justifyContent:'space-evenly', marginTop:'2%'}}>
       <a className="ImgLink" href="https://www.linkedin.com/in/brandonswansfeger"rel="noopener noreferrer" target="_blank"><img src={LinkedIn} alt="linkedin"/></a>

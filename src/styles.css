@@ -60,18 +60,105 @@ div.Container {
     justify-items: center;
     align-items: center;
     justify-content: center;
-    padding-top: 15%;
+    padding-top: 120px;
     
 }
 
 .ButtonBorder {
-    max-width: 200px;
+  text-decoration: none;
+  border: 1px solid rgb(64, 224, 208);
+  position: relative;
+  overflow: hidden;
+  max-width: 150px;
+  min-width: 50px;
+  width: 25%;
+}
+
+.ButtonBorder:hover {
+  box-shadow: 1px 1px 25px 10px rgb(64, 224, 208, 0.4);
+  background-color:darkblue;
+}
+
+.ButtonBorder:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  max-width: 150px;
+  min-width: 50px;
+  width: 25%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(64, 224, 208, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.ButtonBorder:hover:before {
+  left: 100%;
+}
+.ButtonBorder3 {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  color: turquoise;
+  /* border: 1px solid rgb(64, 224, 208); */
+  background: linear-gradient(180deg,gray 1.4967050150787446%,.757474 100%,.000000 100%,.000000 100%,.888787 100%);
+  border-radius: 10px;
+  border: 1px solid gray;
+  position: relative;
+  overflow: hidden;
+  /* max-width: 150px; */
+  width: 100px;
+  height: 30px;
+}
+
+/* .ButtonBorder3:hover {
+  /* box-shadow: 1px 1px 25px 10px rgb(0, 0, 139, 0.4); */
+  /* background-color:darkblue; */
+
+
+.ButtonBorder3:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  max-width: 150px;
+  min-width: 50px;
+  width: 25%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgb(0, 0, 139, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.ButtonBorder3:hover:before {
+  left: 100%;
+}
+
+
+/* .ButtonBorder {
+    max-width: 150px;
     min-width: 50px;
-    width: 100px;
-    border: 1pt solid turquoise;
+    width: 25%;
+    border: 1pt solid rgb(64, 224, 208);
     justify-content: center;
     display: flex;
     align-content: center;
+} */
+
+.navButton {
+  width: 25% !important;
+  max-width: 150px !important;
+  min-width: 50px !important;
 }
 
 .ButtonBorder2 {
@@ -82,11 +169,44 @@ div.Container {
   justify-content: center;
   display: flex;
   align-content: center;
+  position: relative;
+  overflow: hidden;
 }
 .ButtonBorder2:hover{
-    background-color:darkblue;
-        
+    background-color:rgb(0, 0, 139);
+    box-shadow: 1px 1px 25px 10px rgb(64, 224, 208, 0.4);
+    
 } 
+/* .ButtonBorder2:hover {
+  box-shadow: 1px 1px 25px 10px rgb(64, 224, 208, 0.4);
+  background-color:darkblue;
+} */
+
+.ButtonBorder2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  max-width: 150px;
+  min-width: 50px;
+  width: 25%;
+  height: 100%;
+  /* border: 1pt solid turquoise; */
+  /* justify-content: center; */
+  /* display: flex; */
+  /* align-content: center; */
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(64, 224, 208, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.ButtonBorder2:hover:before {
+  left: 100%;
+}
 
 img {
     margin-right: 30px;
@@ -105,6 +225,12 @@ a {
     flex-direction: inline;
     flex-wrap: wrap;
     justify-content: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 40px;
+    width: 100%;
+    /* background-color: black; */
 }
 
 body {
@@ -125,14 +251,19 @@ body {
     background-color: turquoise;
     width: 100%;
     display: flex;
-    flex-direction: inline;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-items: center;
-    align-items:top;
-    justify-content: center;
-    padding-top:10%;
+    align-items:center;
+    justify-content: space-evenly;
+    padding-top:6rem;
+    height: 84vh;
+    overflow: auto;
+    position: fixed;
+    top:13%;
   
 }
+
 
 
 
@@ -164,6 +295,16 @@ body {
   font-style: normal;
   text-align: center;
   margin: 0px 0px 0px 0px
+  }
+  .ButtonBorder3 .buttonText {
+    color: .999;
+  font-size: 18px;
+  font-family: Helvetica Neue;
+  font-weight: 900;
+  line-height: 1pt;
+  font-style: normal;
+  text-align: center;
+  margin: auto;
   }
   .button > i {
   font-size: 1em;
@@ -203,9 +344,28 @@ p.Text {
 	background-size: 300%;
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 900;
-	font-size: small;
+	font-size: medium;
   line-height: 20px;
   text-align: center;
+  background-color: white;
+	/*letter-spacing: -5px;
+	*/text-transform: uppercase;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 10s ease-in-out infinite;
+	-moz-animation: animated_text 10s ease-in-out infinite;
+	-webkit-animation: animated_text 10s ease-in-out infinite;
+}
+
+p.Text2 {
+	background: linear-gradient(-45deg, rgb(253, 250, 250), turquoise, rgb(250, 247, 247), turquoise);
+	background-size: 300%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	font-size: medium;
+  line-height: 20px;
+  text-align: center;
+  background-color: white;
 	/*letter-spacing: -5px;
 	*/text-transform: uppercase;
 	-webkit-background-clip: text;
@@ -227,13 +387,17 @@ p.Text {
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 475px;
-    width: 280px;
+    /* height: 62vh; */
+    /* min-height: 350px; */
+    width: 45%;
+    max-width: 375px;
+    min-width: 280px;
     /* border: 2px solid .080808; */
     border-radius: 20px;
     justify-content: flex-start;
     align-items: center;
     margin: 15px;
+    aspect-ratio: 2/2.5;
 }
  
 .ProjectCard2 {
@@ -242,8 +406,9 @@ p.Text {
   display: flex;
   flex-direction: column;
   background-color: white;
-  height: 475px;
-  width: 280px;
+  height: 62vh;
+  width: 40%;
+    max-width: 350px;
   padding-bottom: 14px;
   /* border: 2px solid .080808; */
   border-radius: 20px;

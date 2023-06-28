@@ -4,7 +4,7 @@ import React from "react";
 const Skills = (props) => {
   return (
   <div className="SkillsBody">
-        <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginTop:'5%', marginBottom:'3%', textAlign:'center'}}>Technical Skills</p>
+        <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginTop:'60px', marginBottom:'3%', textAlign:'center'}}>Technical Skills</p>
 <div className="SkillsIcons">
   <i class="devicon-javascript-plain" style={{color:"turquoise", fontSize:'70px'}}></i>
   <i class="devicon-html5-plain-wordmark"style={{color:'white', fontSize:'70px'}}></i>
