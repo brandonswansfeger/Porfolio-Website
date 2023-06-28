@@ -9,12 +9,15 @@ import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import { Routes } from "react-router";
 import Nav from "./Components/Nav";
+// import { useState, useEffect } from 'react';
+// import LoadingScreen from './loading'
 
 
 function App() {
 
   
 return (
+  // {loading ? (
 <div className="App">
   <Nav />
   <Routes>
@@ -25,7 +28,9 @@ return (
     <Route path="/Contact" element={<Contact/>} />
  </Routes>
    </div>
+  
   );
 }
+
 export default App;
 
