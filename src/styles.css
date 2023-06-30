@@ -103,7 +103,7 @@ height: 100% !important;
 }
 
 .Title {
-  margin-bottom: 40px;
+  margin-bottom: 53px;
 }
 
 .slick-dots {
@@ -237,7 +237,7 @@ div.Container {
   flex-direction: column;
   /* justify-content: stretch; */
   align-items: center;
-  top: 8px;
+  top: 41%;
   /* flex-grow: 1; */
   margin-bottom: auto;
   overflow: visible;
