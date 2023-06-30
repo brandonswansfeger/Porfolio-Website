@@ -5,22 +5,22 @@ const Nav = (props) => {
   return (
     <div className="NavBar" style={{height:'40px', justifyContent:'flex-end', flexWrap:'nowrap'}}>
     <a href="/" className="ButtonBorder navButton">
-    <p style={{ backgroundColor:'transparent', color:'turquoise'}}>Home</p>
+    <span style={{ backgroundColor:'transparent', color:'turquoise'}}>Home</span>
     </a> 
     <a href="/Aboutme/" className="ButtonBorder navButton">
-      <p style={{ backgroundColor:'transparent', color:'turquoise'}}>About</p>
+      <span style={{ backgroundColor:'transparent', color:'turquoise'}}>About</span>
     </a>
     <a href="/Workcopy/"className="ButtonBorder navButton">
-    <p style={{ backgroundColor:'transparent', color:'turquoise'}}>Work</p>
+    <span style={{ backgroundColor:'transparent', color:'turquoise'}}>Work</span>
     </a>
     <a href="/Projects/" className="ButtonBorder navButton">
-    <p style={{ backgroundColor:'transparent', color:'turquoise'}}>Projects</p>
+    <span style={{ backgroundColor:'transparent', color:'turquoise'}}>Projects</span>
     </a>
     <a href="/Skills/"className="ButtonBorder navButton">
-    <p style={{ backgroundColor:'transparent', color:'turquoise'}}>Skills</p>
+    <span style={{ backgroundColor:'transparent', color:'turquoise'}}>Skills</span>
     </a>
-    <a href="/Contact/" className="ButtonBorder">
-    <p  style={{ backgroundColor:'transparent', color:'turquoise'}}>Contact</p>
+    <a href="/Contact/" className="ButtonBorder navButton">
+    <span  style={{ backgroundColor:'transparent', color:'turquoise'}}>Contact</span>
     </a>
 </div>
   );

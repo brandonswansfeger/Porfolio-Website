@@ -37,11 +37,10 @@ const Workcopy = (props) => {
   return (
     <div className="workBody" style={{width: '100%', height: '80vh'}}>
       <div className='Title'>
-        <p style={{ fontFamily: 'Federo', fontSize: '50px', color: 'turquoise', marginBottom: '2%', textAlign: 'center', zIndex: '-2', overflow: 'hidden' }}>Work Samples</p>
-
+        <span style={{ fontFamily: 'Federo', fontSize: '50px', color: 'turquoise', marginBottom: '2%', textAlign: 'center', zIndex: '-2', overflow: 'hidden' }}>Work Samples</span>
       </div>
 
-      <div className="videosContainer col-lg-10">
+      <div className="videosContainer">
         <Slider {...settings}>
           <div className="videoWrapper"  >
             <ReactPlayer className="videoPlayer "  width="100%"
