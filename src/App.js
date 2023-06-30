@@ -23,7 +23,7 @@ function App() {
 return (
   // {loading ? (
 <div className="App">
-  <div className="MainBody d-flex flex-column justify-content-center h-100 w-100">
+  <div className="MainBody d-flex flex-column justify-content-start h-100 w-100">
   <Nav />
   <Routes>
     <Route exact path="/" element={<Main/>} />
