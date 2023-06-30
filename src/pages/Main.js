@@ -11,9 +11,12 @@ export default function Main() {
             </h1>
 
             <h2 className="anim-typewriter Display-1" style={{ fontFamily: 'Open Sans', color: 'white', fontSize: '4.5vw' }}>Software Developer | Full-Stack</h2>
-            <div className="NavBar2 d-flex flex-wrap justify-content-around" style={{ marginTop: '50px', width: '100%', maxWidth: '700px', marginRight: 'auto', marginLeft: 'auto', height: '50px' }}>
+            <div className="NavBar2 d-flex flex-wrap justify-content-center" style={{ marginTop: '50px', width: '100%', maxWidth: '1000px', marginRight: 'auto', marginLeft: 'auto', height: '50px' }}>
                 <a href="/Aboutme/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise', }}>About</p>
+                </a>
+                <a href="/Workcopy/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
+                    <p style={{ backgroundColor: 'transparent', color: 'turquoise' }}>Work</p>
                 </a>
                 <a href="/Projects/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise' }}>Projects</p>
@@ -24,7 +27,7 @@ export default function Main() {
                 <a href="/Contact/" className="ButtonBorder2 style={{ minWidth: '150px' }}">
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise' }}>Contact</p>
                 </a>
-            </div>
+                </div>
         </div>
     )
 }

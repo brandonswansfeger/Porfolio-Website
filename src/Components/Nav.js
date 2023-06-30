@@ -10,6 +10,9 @@ const Nav = (props) => {
     <a href="/Aboutme/" className="ButtonBorder navButton">
       <p style={{ backgroundColor:'transparent', color:'turquoise'}}>About</p>
     </a>
+    <a href="/Workcopy/"className="ButtonBorder navButton">
+    <p style={{ backgroundColor:'transparent', color:'turquoise'}}>Work</p>
+    </a>
     <a href="/Projects/" className="ButtonBorder navButton">
     <p style={{ backgroundColor:'transparent', color:'turquoise'}}>Projects</p>
     </a>
