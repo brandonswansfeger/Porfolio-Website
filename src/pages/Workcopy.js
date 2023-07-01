@@ -44,51 +44,48 @@ const Workcopy = (props) => {
       {<Nav />}
       <div>
         <div className="placeholder">
-           
-        </div>
- <div className='Title'>
-        <span style={{ fontFamily: 'Federo', fontSize: '50px', color: 'turquoise', marginBottom: '2%', textAlign: 'center', zIndex: '-2', overflow: 'hidden', paddingLeft: '4%' }}>Work Samples</span>
+        <div className='Title'>
+        <span style={{ fontFamily: 'Federo', fontSize: '50px', color: 'turquoise', marginBottom: '2%', textAlign: 'center', overflow: 'hidden'}}>Work Samples</span>
       </div>
+        </div>
 
-<div className="videosContainer">
+
+{/* <div className="videosContainer"> */}
         <Slider {...settings}>
-          <div className="videoWrapper" width="100%" height="100%" >
+          <div className="videoWrapperresp">
             <iframe
-              width="100%"
-              // height='600px'
+             className='vidPlayerresp'
               src="https://ik.imagekit.io/sfoz4oajo/graphVid3.mp4?updatedAt=1688167576490"
               title="YouTube video player"
-              style={{position: 'relative', minHeight:"98vh"}}
+         
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen></iframe>
           </div>
-          <div className="videoWrapper" >
+          <div className="videoWrapperresp" >
+         
             <iframe
-              width="100%"
-              className='vidPlayer'
-              height='400px'
+            
+              className='vidPlayerresp'
+         
               src="https://ik.imagekit.io/sfoz4oajo/coinvidorig.mp4?updatedAt=1688170174801"
               title="YouTube video player"
-              style={{position: 'relative', minHeight:"98vh", top: '-40px'}}
+              // style={{position: 'relative', minHeight:"98vh", top: '-40px'}}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen></iframe>
           </div>
-          <div className="videoWrapper" >
+          <div className="videoWrapperresp" >
             <iframe
-              // width="94%"
-              // height='450vh'
-              // style={{}} 
-               width="100%"
+         className='vidPlayerresp'
               src="https://ik.imagekit.io/sfoz4oajo/pyramidvid3.mp4?updatedAt=1688169044490"
               title="YouTube video player"
-              style={{position: 'relative', minHeight:"98vh"}}
+            
        
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>;
           </div>
         </Slider>
-      </div>
+      {/* </div> */}
       <div className="footer">
 
       </div>
