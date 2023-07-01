@@ -5,18 +5,21 @@ import comboaddme from "../Components/img/comboaddme.PNG";
 // import Project2 from "../Components/img/Project2.PNG";
 
 // import landingPage from "../Components/img/landingPage.PNG";
-// import Nav from "../Components/Nav";
+import Nav from "../Components/Nav";
 
 export default function Projects() {
         return (
                
                         <div className="d-flex flex-column" style={{position: 'fixed', width: '100%', height: '100vh', top: '48px', backgroundColor: 'turquoise'}}>
-                                {/* <Nav /> */}
-                               
+                                {<Nav />}
+                    
  
-                      <p style={{fontFamily:'Federo', width: '100%', fontSize:'50px', color:'black', position: 'relative', paddingLeft: 'auto', paddingRight: 'auto', textAlign: 'center', lineHeight: '1', paddingTop: '34px', backgroundColor: 'turquoise', zIndex: 1, marginTop: '15px'}}>Projects</p>
+                      <p style={{fontFamily:'Federo', width: '100%', fontSize:'50px', color:'black', position: 'relative', paddingLeft: 'auto', paddingRight: 'auto', textAlign: 'center', lineHeight: '1', paddingTop: '34px', backgroundColor: 'turquoise', zIndex: 1, marginTop: '0px'}}>Projects</p>
                               
                                             <div className="ProjectsBody sibling-fade pb-5">
+                                            <div className="placeholder">
+           
+           </div>
                                 <div className="ProjectCard">
                                         <div style={{ width: '100%', marginTop: '10px', backgroundColor: 'white', borderRadius: '5px', marginBottom: '15px' }}>
                                                 <p className="Text" style={{ textAlign: 'center'}}> Python | Django | Matplotlib | Pandas | PostgreSQL </p>

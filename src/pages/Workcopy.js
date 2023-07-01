@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick'
+import Nav from '../Components/Nav';
 // import ReactPlayer from 'react-player';
 // import "../../node_modules/video-react/dist/video-react.css";
 // import { Carousel } from '@trendyol-js/react-carousel';
@@ -39,49 +40,62 @@ const Workcopy = (props) => {
 //  const graphurl = 'https://ik.imagekit.io/sfoz4oajo/graphvid.mp4?updatedAt=1688166060233'
 //   const playerRef = useRef(null);
   return (
-    <div className="workBody" style={{ width: '100%', height: '80vh' }}>
-      <div className='Title'>
+    <div className="workBody" style={{ width: '100%', height: '100%' }}>
+      {<Nav />}
+      <div>
+        <div className="placeholder">
+           
+        </div>
+ <div className='Title'>
         <span style={{ fontFamily: 'Federo', fontSize: '50px', color: 'turquoise', marginBottom: '2%', textAlign: 'center', zIndex: '-2', overflow: 'hidden' }}>Work Samples</span>
       </div>
 
-      <div className="videosContainer">
+<div className="videosContainer">
         <Slider {...settings}>
           <div className="videoWrapper" width="100%" height="100%" >
             <iframe
               width="100%"
-              height='600vh'
+              // height='600px'
               src="https://ik.imagekit.io/sfoz4oajo/graphVid3.mp4?updatedAt=1688167576490"
               title="YouTube video player"
-           
+              style={{position: 'relative', minHeight:"98vh"}}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+              allowFullScreen></iframe>
           </div>
           <div className="videoWrapper" >
             <iframe
               width="100%"
-              height='600vh'
+              className='vidPlayer'
+              height='400px'
               src="https://ik.imagekit.io/sfoz4oajo/coinvidorig.mp4?updatedAt=1688170174801"
               title="YouTube video player"
-           
+              style={{position: 'relative', minHeight:"98vh", top: '-40px'}}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-
+              allowFullScreen></iframe>
           </div>
           <div className="videoWrapper" >
             <iframe
-              width="100%"
-              height='600vh'
+              // width="94%"
+              // height='450vh'
+              // style={{}} 
+               width="100%"
               src="https://ik.imagekit.io/sfoz4oajo/pyramidvid3.mp4?updatedAt=1688169044490"
               title="YouTube video player"
-           
+              style={{position: 'relative', minHeight:"98vh"}}
+       
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>;
           </div>
         </Slider>
       </div>
+      <div className="footer">
+
+      </div>
+      </div>
+     
+
+      
 
    </div>
   )

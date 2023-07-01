@@ -11,7 +11,7 @@ import Skills from "./pages/Skills";
 import Workcopy from "./pages/Workcopy";
 import Contact from "./pages/Contact";
 import { Routes } from "react-router";
-import Nav from "./Components/Nav";
+// import Nav from "./Components/Nav";
 // import Projectscopy from "./pages/Projectscopy";
 // import { useState, useEffect } from 'react';
 // import LoadingScreen from './loading'
@@ -24,7 +24,7 @@ return (
   // {loading ? (
 <div className="App">
   <div className="MainBody d-flex flex-column justify-content-start h-100 w-100">
-  <Nav />
+  {/* <Nav /> */}
   <Routes>
     <Route exact path="/" element={<Main/>} />
     <Route path="/aboutme" element={<AboutMe/>} />

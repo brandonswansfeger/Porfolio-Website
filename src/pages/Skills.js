@@ -1,9 +1,15 @@
 import React from "react";
+import Nav from "../Components/Nav";
 
 
 const Skills = (props) => {
   return (
   <div className="SkillsBody pb-5">
+       {<Nav />}
+      {/* <div> */}
+        <div className="placeholder">
+           
+        </div>
         <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginTop:'60px', marginBottom:'3%', textAlign:'center'}}>Technical Skills</p>
 <div className="SkillsIcons">
   <i class="devicon-javascript-plain" style={{color:"turquoise", fontSize:'70px'}}></i>

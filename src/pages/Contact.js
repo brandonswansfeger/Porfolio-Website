@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import ContactForm from "../Components/ContactForm";
 import LinkedIn from "../Components/img/LinkedIn.PNG";
 import Github from "../Components/img/Github.PNG";
+import Nav from "../Components/Nav";
 
 function Contact() {
   useEffect(() => {
@@ -18,6 +19,7 @@ function Contact() {
   return (
     
     <div className="ContactBody"style={{backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize:'cover', width:'100%', height:'100vh'}}>
+      {<Nav />}
     <div style={{display:'flex', flexDirection:'column', justifyContent:'center',alignItems:'center', height:'100vh', paddingBottom: '10%'}}>
     <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginTop:'60px', marginBottom:'3%'}}>Contact Me</p>
     <ContactForm />
