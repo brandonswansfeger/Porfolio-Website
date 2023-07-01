@@ -821,7 +821,7 @@ p.Text2 {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    /* height: 62vh; */
+    height: 450px;
     /* min-height: 350px; */
     width: 45%;
     max-width: 375px;
