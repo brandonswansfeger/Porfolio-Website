@@ -124,7 +124,7 @@ iframe {
 
  .slick-dots {
 /* margin-bottom: auto !important; */
-top: calc(1vw + 8%) !important;
+top: 10%!important;
 position:absolute !important;
 width: 100px !important;
 height: 25px !important;

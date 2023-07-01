@@ -25,6 +25,8 @@ const Workcopy = (props) => {
     dots: true,
     infinite: true,
     navs: true,
+    swipeToSlide: true,
+    className: "center",
     // speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
