@@ -96,18 +96,18 @@ padding-top: 3% !important;
 }
 
 .Title {
-  padding-bottom: 20px !important; 
+  /* padding-bottom: 20px !important;  */
   /* padding-top: 3%; */
   justify-self: start;
   /* padding-top: 3% !important; */
-  position: absolute;
+  /* position: absolute; */
   width: 28vw !important;
-  top: calc(2vw + 4%) !important;
+  margin-top: 5%;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  z-index: 1;
+  z-index: 3;
   
 
 }
@@ -125,14 +125,16 @@ iframe {
 }
 
  .slick-dots {
+  margin-left: 10px;
 /* margin-bottom: auto !important; */
-top: 10%!important;
+top: -40px;
 position:absolute !important;
-width: 100px !important;
+width: 150px !important;
 height: 25px !important;
-background-color: black;
+/* background-color: black; */
 z-index: 3;
 left: 0 !important;
+font-size: 0 !important;
 right: 0 !important;
 margin-right: auto !important;
 margin-left: auto !important;
@@ -141,19 +143,38 @@ margin-left: auto !important;
   /* border: 5px solid black; */
 } 
 
+.slick-dots li button::before {
+font-size: 0 !important;
+}
+
 .slick-dots > li {
-  border: 1px solid turquoise;
-  background-color: white;
-  color: turquoise;
+  border: 1px solid turquoise !important;
+  margin: 0 10px !important;
+  width: 25px !important;
+  height: 25px !important;
+  /* background-color: transparent; */
+  /* color: turquoise; */
+   font-size: 0 !important;
+   /* color: white; */
   /* box-shadow: 1px 1px 10px 10px rgb(64, 224, 208, 0.4); */
-  background-color:darkblue;
-  z-index: 3 !important;
+  /* background-color:darkblue; */
+  /* z-index: 3 !important; */
  
 }
 
-.slick-dots > li:hover {
+.slick-dots >  li > button {
+font-size: 12px !important;
+height: 25px !important;
+width: 25px !important;
+color: white !important;
+background-color: darkblue !important;
+/* color: white; */
+}
+
+.slick-dots > li > button:hover {
   border: 1px solid darkblue ;
-  background-color: turquoise;
+  background-color: turquoise !important;
+  color: darkblue !important;
   /* color: turquoise; */
   box-shadow: 1px 1px 5px 3px rgb(64, 224, 208, 0.4);
   /* background-color:; */
@@ -161,11 +182,13 @@ margin-left: auto !important;
 }
 
 
-.slick-dots > .slick-active {
-  border: 1px solid darkblue ;
-  background-color: turquoise;
+.slick-active button {
+  
+  /* border: 1px solid darkblue !important; */
+  background-color: turquoise !important;
+  color: darkblue !important;
   /* color: turquoise; */
-  box-shadow: 1px 1px 5px 3px rgb(64, 224, 208, 0.4);
+  box-shadow: 0px 1px 6px 2px rgb(64, 224, 208, 1);
   /* background-color:; */
  
 }
@@ -261,9 +284,28 @@ margin-right: auto !important;
   transition: fade 1s ease-in-out;
 }  */
 
+.videoWrapperresp {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.vidPlayerresp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .placeholder {
-  display: inline-block;
-  height: 50px;
+  /* display: inline-block; */
+  height: 100px;
+  background-color: transparent;
   width: 100%;
 }
 
@@ -282,7 +324,7 @@ margin-right: auto !important;
   height: 100% !important;
   width: 100%;
   /* margin-top: 60px; */
-  overflow: hidden !important;
+  overflow: auto;
   padding: 1.5rem !important;
  
 }
