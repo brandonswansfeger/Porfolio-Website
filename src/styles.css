@@ -118,13 +118,17 @@ padding-top: 3% !important;
 }
 
  .slick-dots {
-margin-bottom: auto !important;
+/* margin-bottom: auto !important; */
 top: calc(1vw + 8%) !important;
 position:absolute !important;
 width: 100px !important;
+height: 25px !important;
+background-color: black;
 z-index: 3;
 left: 0;
 right: 0;
+margin-right: auto;
+margin-left: auto;
   /* padding-left: 10px !important; */
   /* padding-right: 10px  !important; */
   /* border: 5px solid black; */
