@@ -1,10 +1,12 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import Slider from 'react-slick'
-import ReactPlayer from 'react-player';
+// import ReactPlayer from 'react-player';
+// import "../../node_modules/video-react/dist/video-react.css";
 // import { Carousel } from '@trendyol-js/react-carousel';
-import pyramid from "../Components/img/pyramid.mp4";
-import graphvid from "../Components/img/graphvid.mp4";
-import coinvid from "../Components/img/coinvid.mp4";
+// import pyramid from "../Components/img/pyramid.mp4";
+// import graphvid from "../Components/img/graphvid.gif";
+// import coinvid from "../Components/img/coinvid.mp4";
+// import { Player } from 'video-react';
 
 // import LeftArrow from '../Components/LeftArrow';
 // import RightArrow from '../Components/RightArrow';
@@ -32,40 +34,55 @@ const Workcopy = (props) => {
 
   };
  
-
-  const playerRef = useRef(null);
+//  const graphurl = 'https://ik.imagekit.io/sfoz4oajo/graphvid.mp4?updatedAt=1688166060233'
+//   const playerRef = useRef(null);
   return (
-    <div className="workBody" style={{width: '100%', height: '80vh'}}>
+    <div className="workBody" style={{ width: '100%', height: '80vh' }}>
       <div className='Title'>
         <span style={{ fontFamily: 'Federo', fontSize: '50px', color: 'turquoise', marginBottom: '2%', textAlign: 'center', zIndex: '-2', overflow: 'hidden' }}>Work Samples</span>
       </div>
 
       <div className="videosContainer">
         <Slider {...settings}>
-          <div className="videoWrapper"  >
-            <ReactPlayer className="videoPlayer "  width="100%"
-            height="100%" ref={playerRef} url={pyramid} controls={true} />
+          <div className="videoWrapper" width="100%" height="100%" >
+            <iframe
+              width="100%"
+              height='600vh'
+              src="https://ik.imagekit.io/sfoz4oajo/graphVid3.mp4?updatedAt=1688167576490"
+              title="YouTube video player"
+           
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+          <div className="videoWrapper" >
+            <iframe
+              width="100%"
+              height='600vh'
+              src="https://ik.imagekit.io/sfoz4oajo/coinsvid2.mp4?updatedAt=1688168673586"
+              title="YouTube video player"
+           
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
 
           </div>
           <div className="videoWrapper" >
-            <ReactPlayer className="videoPlayer " ref={playerRef} url={graphvid} controls={true} />
+            <iframe
+              width="100%"
+              height='600vh'
+              src="https://ik.imagekit.io/sfoz4oajo/pyramidvid3.mp4?updatedAt=1688169044490"
+              title="YouTube video player"
+           
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>;
           </div>
-          <div className="videoWrapper" >
-            <ReactPlayer className="videoPlayer " ref={playerRef} url={coinvid} controls={true} />
-          </div>
-
-
-     
-
-   </Slider>
+        </Slider>
       </div>
 
- 
-
- 
-
-  </div>
-  ) 
+   </div>
+  )
 };
 
 export default Workcopy;
