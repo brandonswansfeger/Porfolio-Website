@@ -55,7 +55,7 @@ const Workcopy = (props) => {
           <div className="videoWrapperresp">
             <iframe
              className='vidPlayerresp'
-              src="https://ik.imagekit.io/sfoz4oajo/graphVid3.mp4?updatedAt=1688167576490"
+              src="https://ik.imagekit.io/sfoz4oajo/graphvid.mp4?updatedAt=1688225185683"
               title="YouTube video player"
          
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
