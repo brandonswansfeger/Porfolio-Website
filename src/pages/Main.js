@@ -24,9 +24,9 @@ export default function Main() {
                 <a href="/Aboutme/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise', }}>About</p>
                 </a>
-                <a href="/Workcopy/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
+                {/* <a href="/Workcopy/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise' }}>Work</p>
-                </a>
+                </a> */}
                 <a href="/Projects/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise' }}>Projects</p>
                 </a>
