@@ -111,6 +111,10 @@ padding-top: 3% !important;
 
 }
 
+iframe {
+  border: none !important;
+}
+
 .slick-slider {
  width: 80% !important;
  min-width: 350px !important;
@@ -126,10 +130,10 @@ width: 100px !important;
 height: 25px !important;
 background-color: black;
 z-index: 3;
-left: 0;
-right: 0;
-margin-right: auto;
-margin-left: auto;
+left: 0 !important;
+right: 0 !important;
+margin-right: auto !important;
+margin-left: auto !important;
   /* padding-left: 10px !important; */
   /* padding-right: 10px  !important; */
   /* border: 5px solid black; */
