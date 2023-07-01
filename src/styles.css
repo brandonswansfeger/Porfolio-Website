@@ -243,8 +243,8 @@ div.Container {
   /* justify-content: space-around; */
   /* transition: opacity 1s ease-in-out !important; */
   /* animation: fade 1.5s ease-in-out !important; */
-min-width: 350px !important;
-margin-left: auto !important;
+min-width: 323px !important;
+/* margin-left: auto !important; */
 margin-right: auto !important;
 }
 
@@ -287,6 +287,34 @@ margin-right: auto !important;
       /* height: auto; */
   }
   }
+
+  @media screen and (max-width: 900px) {
+    .Title > span {
+     font-size: 7vw !important;
+     width: 200px;
+    }
+    }
+    @media screen and (max-width: 900px) {
+      .Title {
+       /* font-size: 7vw !important; */
+       width: 100% !important;
+      }
+      }
+      @media screen and (max-width: 900px) {
+        .slick-cloned {
+          min-width: 344px;
+        }
+        }
+        @media screen and (max-width: 900px) and (orientation: 'portrait') {
+          .slick-active {
+            width: 323px !important;
+          }
+          }
+
+      .slick-slide > div {
+        display: flex;
+        justify-content: center;
+      }
 
 
 .videosContainer {
