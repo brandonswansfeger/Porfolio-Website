@@ -47,7 +47,7 @@ const Workcopy = (props) => {
            
         </div>
  <div className='Title'>
-        <span style={{ fontFamily: 'Federo', fontSize: '50px', color: 'turquoise', marginBottom: '2%', textAlign: 'center', zIndex: '-2', overflow: 'hidden' }}>Work Samples</span>
+        <span style={{ fontFamily: 'Federo', fontSize: '50px', color: 'turquoise', marginBottom: '2%', textAlign: 'center', zIndex: '-2', overflow: 'hidden', paddingLeft: '4%' }}>Work Samples</span>
       </div>
 
 <div className="videosContainer">
