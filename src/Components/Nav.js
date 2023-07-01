@@ -3,7 +3,9 @@ import React from "react";
 
 const Nav = (props) => {
   return (
-    <div className="NavBar" style={{height:'40px', justifyContent:'flex-end', flexWrap:'nowrap'}}>
+    <div className="NavWrapper" style={{position:'fixed', top: '0px', right: '0px'}}>
+
+ {/* <div className="NavBar" style={{height:'40px', justifyContent:'flex-end', flexWrap:'nowrap', alignSelf: 'flex-start'}}> */}
     <a href="/" className="ButtonBorder navButton">
     <span style={{ backgroundColor:'transparent', color:'turquoise'}}>Home</span>
     </a> 
@@ -22,7 +24,10 @@ const Nav = (props) => {
     <a href="/Contact/" className="ButtonBorder navButton">
     <span  style={{ backgroundColor:'transparent', color:'turquoise'}}>Contact</span>
     </a>
-</div>
+
+    </div>
+   
+// </div>
   );
 };
 
