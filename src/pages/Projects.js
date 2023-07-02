@@ -10,14 +10,16 @@ import Nav from "../Components/Nav";
 export default function Projects() {
         return (
 
-                <div className="d-flex flex-column" style={{ position: 'fixed', width: '100%', height: '100vh', top: '48px', backgroundColor: 'turquoise' }}>
+                <div className="d-flex flex-column" style={{ position: 'fixed', width: '100%', height: '100vh', top: '13vh', backgroundColor: 'turquoise' }}>
                         {<Nav />}
+<div className="placeholder" style={{top: '50px', backgroundColor: 'turquoise', position: 'fixed', height:''}}>
 
-
-                        <p style={{ fontFamily: 'Federo', width: '100%', fontSize: '50px', color: 'black', position: 'relative', paddingLeft: 'auto', paddingRight: 'auto', textAlign: 'center', lineHeight: '1', paddingTop: '34px', backgroundColor: 'turquoise', zIndex: 1, marginTop: '0px' }}>Projects</p>
+</div>
+ <p style={{ fontFamily: 'Federo', width: '100%', fontSize: '50px', color: 'black', position: 'relative', paddingLeft: 'auto', paddingRight: 'auto', textAlign: 'center', lineHeight: '1', backgroundColor: 'turquoise', zIndex: 1, marginTop: '-20px', paddingTop: '20px' }}>Projects</p>
+                       
 
                         <div className="ProjectsBody sibling-fade pb-5">
-                                <div className="placeholder">
+                                <div className="placeholder" style={{height: '50px'}}>
 
                                 </div>
                                 <div className="ProjectCard">
