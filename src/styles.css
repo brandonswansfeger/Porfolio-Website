@@ -523,6 +523,7 @@ a {
     text-align: center;
     /* margin-left: auto; */
     display: flex;
+    
   
   }
 }
@@ -555,6 +556,13 @@ a {
     box-shadow: 1px 1px 25px 10px rgb(64, 224, 208, 0.4);
     
 } 
+.active {
+  background-color:rgb(0, 0, 139);
+  box-shadow: 1px 1px 25px 10px rgb(64, 224, 208, 0.4);
+  
+} 
+
+
 /* .ButtonBorder2:hover {
   box-shadow: 1px 1px 25px 10px rgb(64, 224, 208, 0.4);
   background-color:darkblue;
