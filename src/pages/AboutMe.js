@@ -8,23 +8,35 @@ const AboutMe = (props) => {
 
 
         <div className="AboutBody" height={window.innerHeight} style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}} >
-                 <m.div className="slide-in"
+                 {/* <m.div className="slide-in"
                 initial={{ scaleY: 0}} exit={{scaleY: 1}}
                 animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
-               />
+               /> */}
       <div sx={{position: "relative", width: '100%', height: '100%'}}>
-<m.div initial={{ scaleX: 1 }}    animate={{ scaleX: 0, transition: { duration: 0.4 }}}  
+<m.div initial={{ scaleX: 1,  animationDelay: '5s' }}    animate={{ scaleX: 0, transition: { duration: 10 }, animationDelay: '2s'}}  
   // exit={{ scaleX: 1, transition: { duration: 0.8 }}} 
 style={{
         originX: 0,
-        backgroundColor: 'turquoise',
+        backgroundColor: 'transparent',
         position: 'absolute',
         top: 0,
         left: 0,
         bottom: 0,
         right: 0,
         zIndex: 80,
-      }}/>
+      }}>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig .5s linear .2s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig .5s linear .4s', animationFillMode: 'both'}}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig .5s linear .6s', animationFillMode: 'both'}}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig .5s linear .8s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig .5s linear 1.0s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig .5s linear 1.2s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig .5s linear 1.4s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig .5s linear 1.0s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig .5s linear 1.2s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig .5s linear 1.4s', animationFillMode: 'both' }}/>
+      <m.div/>
+    </m.div>
     </div>
               {<Nav />}
 

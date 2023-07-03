@@ -10,28 +10,36 @@ export default function Main() {
     return (
         <div style={{ backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize: 'cover', width: '100%', height: '100vh' }} className="d-flex flex-column justify-content-center">
            
-           <m.div className="slide-in"
+           {/* <m.div className="slide-in"
                 initial={{ scaleY: 0}} exit={{scaleY: 1}}
                 animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
-               />             
+               />              */}
       <div sx={{position: "relative", width: '100%', height: '100%'}}>
-<m.div initial={{ scaleX: 1 }}    animate={{ scaleX: 0, transition: { duration: 0.4 }}}  
+<m.div initial={{ scaleX: 1,  animationDelay: '10s' }}    animate={{ scaleX: 0, transition: { duration: 10 }, animationDelay: '3s'}}  
   // exit={{ scaleX: 1, transition: { duration: 0.8 }}} 
 style={{
         originX: 0,
-        backgroundColor: 'turquoise',
+        backgroundColor: 'transparent',
         position: 'absolute',
         top: 0,
         left: 0,
         bottom: 0,
         right: 0,
         zIndex: 80,
-      }}/>
+      }}>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear .2s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear .4s', animationFillMode: 'both'}}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear .6s', animationFillMode: 'both'}}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear .8s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear 1.0s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear 1.2s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear 1.4s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear 1.0s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear 1.2s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear 1.4s', animationFillMode: 'both' }}/>
+      <m.div/>
+    </m.div>
     </div>
-{/* <m.div className="slide-out" style={{backgroundColor: 'turquoise'}}
- initial={{ scaleY: 1}} exit={{scaleY: 0}}
- animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
-/> */}
    {<Nav />}
       <div className="placeholder">
            
