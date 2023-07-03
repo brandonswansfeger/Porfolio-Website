@@ -1,10 +1,12 @@
 import React from "react";
 import Nav from "../Components/Nav";
+import { motion as m } from  'framer-motion';
+
 
 
 const Skills = (props) => {
   return (
-  <div className="SkillsBody pb-5">
+  <m.div className="SkillsBody pb-5">
        {<Nav />}
       {/* <div> */}
         <div className="placeholder">
@@ -30,7 +32,7 @@ const Skills = (props) => {
   <i class="devicon-jquery-plain-wordmark" style={{color:'white', fontSize:'70px'}}></i>
  
    </div>
-  </div>
+  </m.div>
   ) 
 };
 

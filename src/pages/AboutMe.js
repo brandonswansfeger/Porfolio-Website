@@ -1,13 +1,13 @@
 import React from "react";
 import aboutmeepic from "../Components/img/aboutmeepic.PNG"
 import Nav from "../Components/Nav";
-
+import { motion as m } from "framer-motion";
 
 const AboutMe = (props) => {
   return (
 
 
-    <div className="AboutBody" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', width: '100%', overflow:"hidden" }}>
+    <m.div className="AboutBody" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', width: '100%', overflow:"hidden" }}>
               {<Nav />}
 
         <div className="placeholder w-100">
@@ -29,7 +29,7 @@ const AboutMe = (props) => {
  
       </div>
   
-    </div>
+    </m.div>
 
 
   );

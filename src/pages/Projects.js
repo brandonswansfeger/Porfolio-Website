@@ -3,6 +3,8 @@ import mobilecovid from "../Components/img/mobilecovid.PNG";
 import tfrgdpcombo from "../Components/img/tfrgdpcombo.PNG";
 import comboaddme from "../Components/img/comboaddme.PNG";
 // import Project2 from "../Components/img/Project2.PNG";
+import { motion as m } from  'framer-motion';
+
 
 // import landingPage from "../Components/img/landingPage.PNG";
 import Nav from "../Components/Nav";
@@ -10,7 +12,7 @@ import Nav from "../Components/Nav";
 export default function Projects() {
         return (
 
-                <div className="d-flex flex-column" style={{ position: 'fixed', width: '100%', height: '100vh', top: '13vh', backgroundColor: 'turquoise' }}>
+                <m.div className="d-flex flex-column" style={{ position: 'fixed', width: '100%', height: '100vh', top: '13vh', backgroundColor: 'turquoise' }}>
                         {<Nav />}
 <div className="placeholder" style={{top: '50px', backgroundColor: 'turquoise', position: 'fixed', height:''}}>
 
@@ -111,7 +113,7 @@ export default function Projects() {
                         </div>
 
 
-                </div>
+                </m.div>
 
 
 

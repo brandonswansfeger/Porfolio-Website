@@ -1,24 +1,25 @@
 import React from "react";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import ContactForm from "../Components/ContactForm";
 import LinkedIn from "../Components/img/LinkedIn.PNG";
 import Github from "../Components/img/Github.PNG";
 import Nav from "../Components/Nav";
+import { motion as m } from  'framer-motion';
 
 function Contact() {
-  useEffect(() => {
-    if (document) {
-      const stylesheet = document.createElement("link");
-      stylesheet.rel = "stylesheet";
-      stylesheet.href = "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css";
+  // useEffect(() => {
+  //   if (document) {
+  //     const stylesheet = document.createElement("link");
+  //     stylesheet.rel = "stylesheet";
+  //     stylesheet.href = "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css";
 
-      document.head.appendChild(stylesheet);
-    }
-  }, []);
+  //     document.head.appendChild(stylesheet);
+  //   }
+  // }, []);
 
   return (
     
-    <div className="ContactBody"style={{backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize:'cover', width:'100%', height:'100vh'}}>
+    <m.div className="ContactBody"style={{backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize:'cover', width:'100%', height:'100vh'}}>
       {<Nav />}
     <div style={{display:'flex', flexDirection:'column', justifyContent:'center',alignItems:'center', height:'100vh', paddingBottom: '10%'}}>
     <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginTop:'60px', marginBottom:'3%'}}>Contact Me</p>
@@ -29,7 +30,7 @@ function Contact() {
 
     </div>
 </div>
-</div>
+</m.div>
   )
 };
 

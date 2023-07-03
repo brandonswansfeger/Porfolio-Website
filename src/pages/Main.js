@@ -1,12 +1,13 @@
 import React from "react";
 // import Nav from "../Components/Nav";
+import { motion as m } from  'framer-motion';
+
 
 
 export default function Main() {
     return (
-        <div style={{ backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize: '100% 100%', width: '100%', height: '100vh' }} className="d-flex flex-column justify-content-center">
-   {/* {<Nav />} */}
-      {/* <div> */}
+        <m.div style={{ backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize: '100% 100%', width: '100%', height: '100vh' }} className="d-flex flex-column justify-content-center">
+
       <div className="placeholder">
            
            </div>
@@ -38,6 +39,6 @@ export default function Main() {
                 </a>
                </div> 
                </div>
-        </div>
+        </m.div>
     )
 }
