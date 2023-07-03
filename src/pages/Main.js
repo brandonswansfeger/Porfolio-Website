@@ -8,7 +8,7 @@ import Nav from "../Components/Nav";
 
 export default function Main() {
     return (
-        <div style={{ backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize: 'contain', width: '100%', height: '100vh' }} className="d-flex flex-column justify-content-center">
+        <div style={{ backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize: 'cover', width: '100%', height: '100vh' }} className="d-flex flex-column justify-content-center">
            
            <m.div className="slide-in"
                 initial={{ scaleY: 0}} exit={{scaleY: 1}}
@@ -38,7 +38,7 @@ style={{
            </div>
            <div className="mt-auto mb-auto">
  <h1>
-                <div style={{ textAlign: 'center', color: 'turquoise', textTransform: 'capitalize', fontFamily: 'Federo', fontSize: '7vw', position: 'relative' }} >
+                <div style={{ textAlign: 'center', color: 'turquoise', textTransform: 'capitalize', fontFamily: 'Federo', fontSize: 'min(11vw, 97px)', position: 'relative' }} >
                     brandon swansfeger</div>
             </h1>
 
