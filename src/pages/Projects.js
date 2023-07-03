@@ -18,7 +18,7 @@ export default function Projects() {
                 animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
                /> */}
                <div sx={{position: "relative", width: '100%', height: '100%'}}>
-<m.div initial={{ scaleX: 1,  animationDelay: '10s' }}    animate={{ scaleX: 0, transition: { duration: 10 }, animationDelay: '3s'}}  
+<m.div initial={{ scaleX: 1,  animationDelay: '1s' }}    animate={{ scaleX: 0, transition: { duration: 5 }, animationDelay: '2s'}}  
   // exit={{ scaleX: 1, transition: { duration: 0.8 }}} 
 style={{
         originX: 0,
@@ -30,16 +30,16 @@ style={{
         right: 0,
         zIndex: 80,
       }}>
-      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear .2s', animationFillMode: 'both' }}/>
-      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear .4s', animationFillMode: 'both'}}/>
-      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear .6s', animationFillMode: 'both'}}/>
-      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear .8s', animationFillMode: 'both' }}/>
-      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear 1.0s', animationFillMode: 'both' }}/>
-      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear 1.2s', animationFillMode: 'both' }}/>
-      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear 1.4s', animationFillMode: 'both' }}/>
-      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear 1.0s', animationFillMode: 'both' }}/>
-      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear 1.2s', animationFillMode: 'both' }}/>
-      <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear 1.4s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" style={{backgroundColor: 'white'}} animate={{animation: 'fadeOutLeftBig 1s linear .2s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" style={{backgroundColor: 'white'}} animate={{animation: 'fadeOutLeftBig 1s linear .4s', animationFillMode: 'both'}}/>
+      <m.div className="motionRows" style={{backgroundColor: 'white'}} animate={{animation: 'fadeOutLeftBig 1s linear .6s', animationFillMode: 'both'}}/>
+      <m.div className="motionRows" style={{backgroundColor: 'white'}} animate={{animation: 'fadeOutLeftBig 1s linear .8s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" style={{backgroundColor: 'white'}} animate={{animation: 'fadeOutLeftBig 1s linear 1.0s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" style={{backgroundColor: 'white'}} animate={{animation: 'fadeOutLeftBig 1s linear 1.2s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" style={{backgroundColor: 'white'}} animate={{animation: 'fadeOutLeftBig 1s linear 1.4s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" style={{backgroundColor: 'white'}} animate={{animation: 'fadeOutLeftBig 1s linear 1.0s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" style={{backgroundColor: 'white'}} animate={{animation: 'fadeOutLeftBig 1s linear 1.2s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" style={{backgroundColor: 'white'}} animate={{animation: 'fadeOutLeftBig 1s linear 1.4s', animationFillMode: 'both' }}/>
       <m.div/>
     </m.div>
     </div>
