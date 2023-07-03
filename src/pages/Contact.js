@@ -19,7 +19,25 @@ function Contact() {
 
   return (
     
-    <m.div className="ContactBody"style={{backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize:'cover', width:'100%', height:'100vh'}}>
+    <div className="ContactBody"style={{backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize:'cover', width:'100%', height:'100vh'}}>
+           <m.div className="slide-in"
+                initial={{ scaleY: 0}} exit={{scaleY: 1}}
+                animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
+               />
+      <div sx={{position: "relative", width: '100%', height: '100%'}}>
+<m.div initial={{ scaleX: 1 }}    animate={{ scaleX: 0, transition: { duration: 0.4 }}}  
+  // exit={{ scaleX: 1, transition: { duration: 0.8 }}} 
+style={{
+        originX: 0,
+        backgroundColor: 'turquoise',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
+        zIndex: 2,
+      }}/>
+    </div>
       {<Nav />}
     <div style={{display:'flex', flexDirection:'column', justifyContent:'center',alignItems:'center', height:'100vh', paddingBottom: '10%'}}>
     <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginTop:'60px', marginBottom:'3%'}}>Contact Me</p>
@@ -30,7 +48,7 @@ function Contact() {
 
     </div>
 </div>
-</m.div>
+</div>
   )
 };
 

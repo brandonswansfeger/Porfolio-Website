@@ -10,7 +10,10 @@ import imacscreen from "../Components/img/imacscreen.png";
 const Work = (props) => {
   const playerRef = useRef(null);
   return (
-  <div className="workBody">
+  <m.div className="workBody"
+  initial={{top: '-2000px'}}
+    animate={{top: 0, animationDuration: '1s'}}
+    exit={{y: window.innerHeight, animationDuration: '1s'}}>
 <div>
 <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginTop:'60px', marginBottom:'3%', textAlign:'center', backgroundImage:`url(${imacscreen})`}}>Work Examples</p>
 
@@ -32,7 +35,7 @@ const Work = (props) => {
 
  
 
-  </div>
+  </m.div>
   ) 
 };
 

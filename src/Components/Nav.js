@@ -1,15 +1,20 @@
 import React from "react";
 import { NavLink } from 'react-router-dom'
 // import { Link } from "react-router-dom";
+// import { NavBar } from 'react-bootstrap';
+
 
 const Nav = (props) => {
   return (
-    <div className="NavWrapper" style={{position:'fixed', top: '0px', right: '0px'}}>
+    <div className="NavWrapper header" style={{position:'fixed', top: '0px', right: '0px', pointerEvents: 'auto'}}>
 
  {/* <div className="NavBar" style={{height:'40px', justifyContent:'flex-end', flexWrap:'nowrap', alignSelf: 'flex-start'}}> */}
-    <NavLink to="/" className="ButtonBorder navButton" activeClassName="is-active">
+     <NavLink to="/" className="ButtonBorder navButton" activeClassName="is-active">
     <span style={{ backgroundColor:'transparent', color:'turquoise'}}>Home</span>
     </NavLink> 
+
+    
+   
     <NavLink to="/Aboutme/" className="ButtonBorder navButton" activeClassName="is-active">
       <span style={{ backgroundColor:'transparent', color:'turquoise'}}>About</span>
     </NavLink>
@@ -26,9 +31,8 @@ const Nav = (props) => {
     <span  style={{ backgroundColor:'transparent', color:'turquoise'}}>Contact</span>
     </NavLink>
 
+    
     </div>
-   
-// </div>
   );
 };
 

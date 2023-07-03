@@ -1,4 +1,4 @@
-import "./styles.css";
+import "../styles.css";
 import React from "react";
 import 'animate.css';
 
@@ -13,6 +13,8 @@ import Contact from "../pages/Contact";
 import { Routes } from "react-router";
 import { AnimatePresence  } from "framer-motion";
 import { useLocation } from "react-router/dist";
+// import { Switch } from 'react-router-dom':
+
 // import Nav from "../Components/Nav";
 // import Projectscopy from "../pages/Projectscopy";
 // import { useState, useEffect } from 'react';
@@ -23,7 +25,7 @@ function AnimatedRoutes() {
 const location = useLocation();
   
 return (
-    <AnimatePresence>
+    <AnimatePresence exitBeforeEnter>
 <Routes location={location} key={location.pathname}>
     <Route exact path="/" element={<Main/>} />
     <Route path="/aboutme" element={<AboutMe/>} />

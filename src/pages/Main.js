@@ -1,13 +1,38 @@
 import React from "react";
 // import Nav from "../Components/Nav";
 import { motion as m } from  'framer-motion';
+import { NavLink } from "react-router-dom";
+import Nav from "../Components/Nav";
 
 
 
 export default function Main() {
     return (
-        <m.div style={{ backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize: '100% 100%', width: '100%', height: '100vh' }} className="d-flex flex-column justify-content-center">
-
+        <div style={{ backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize: 'contain', width: '100%', height: '100vh' }} className="d-flex flex-column justify-content-center">
+           
+           <m.div className="slide-in"
+                initial={{ scaleY: 0}} exit={{scaleY: 1}}
+                animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
+               />             
+      <div sx={{position: "relative", width: '100%', height: '100%'}}>
+<m.div initial={{ scaleX: 1 }}    animate={{ scaleX: 0, transition: { duration: 0.4 }}}  
+  // exit={{ scaleX: 1, transition: { duration: 0.8 }}} 
+style={{
+        originX: 0,
+        backgroundColor: 'turquoise',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
+        zIndex: 80,
+      }}/>
+    </div>
+{/* <m.div className="slide-out" style={{backgroundColor: 'turquoise'}}
+ initial={{ scaleY: 1}} exit={{scaleY: 0}}
+ animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
+/> */}
+   {<Nav />}
       <div className="placeholder">
            
            </div>
@@ -22,23 +47,23 @@ export default function Main() {
            
            
             <div className="NavBar2 d-flex flex-wrap justify-content-center" style={{ marginBottom: '20vh', width: '100%', maxWidth: '1000px', marginRight: 'auto', marginLeft: 'auto', height: '50px', marginTop: '20px'}}>
-                <a href="/Aboutme/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
+                <NavLink to="/Aboutme/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise', }}>About</p>
-                </a>
-                <a href="/Workcopy/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
+                </NavLink>
+                <NavLink to="/Workcopy/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise' }}>Work</p>
-                </a>
-                <a href="/Projects/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
+                </NavLink>
+                <NavLink to="/Projects/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise' }}>Projects</p>
-                </a>
-                <a href="/Skills/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
+                </NavLink>
+                <NavLink to="/Skills/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise' }}>Skills</p>
-                </a>
-                <a href="/Contact/" className="ButtonBorder2 style={{ minWidth: '150px' }}">
+                </NavLink>
+                <NavLink to="/Contact/" className="ButtonBorder2 style={{ minWidth: '150px' }}">
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise' }}>Contact</p>
-                </a>
+                </NavLink>
                </div> 
                </div>
-        </m.div>
+        </div>
     )
 }

@@ -14,6 +14,8 @@ import Nav from '../Components/Nav';
 import 'animate.css';
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import { motion as m } from  'framer-motion';
+
 
 
 // const VIDEO_PATH = 'https://youtu.be/0BIaDVnYp2A';
@@ -41,17 +43,39 @@ const Workcopy = (props) => {
 //   const playerRef = useRef(null);
   return (
     <div className="workBody" style={{ width: '100%', height: '100%' }}>
+        
+   <m.div className="slide-in"
+                initial={{ scaleY: 0}} exit={{scaleY: 1}}
+                animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
+               />
+      <div sx={{position: "relative", width: '100%', height: '100%'}}>
+<m.div initial={{ scaleX: 1 }}    animate={{ scaleX: 0, transition: { duration: 0.4 }}}  
+  // exit={{ scaleX: 1, transition: { duration: 0.8 }}} 
+style={{
+        originX: 0,
+        backgroundColor: 'rgb(1,22,59)',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
+        zIndex: 80,
+      }}/>
+    </div>
       {<Nav />}
-      <div>
-        <div className="placeholder">
-        <div className='Title'>
+      
+      <div className="placeholder">
+        
+           </div>
+      
+      
+ <div className='Title'>
         <span style={{ fontFamily: 'Federo', fontSize: '50px', color: 'turquoise', marginBottom: '2%', textAlign: 'center', overflow: 'hidden'}}>Work Samples</span>
       </div>
-        </div>
 
-
-{/* <div className="videosContainer"> */}
-        <Slider {...settings}>
+<div className="videosContainer">
+           
+          <Slider {...settings}>
           <div className="videoWrapperresp">
             <iframe
              className='vidPlayerresp'
@@ -85,7 +109,7 @@ const Workcopy = (props) => {
             ></iframe>;
           </div>
         </Slider>
-      {/* </div> */}
+      </div>
       <div className="footer">
 
       </div>
@@ -94,7 +118,7 @@ const Workcopy = (props) => {
 
       
 
-   </div>
+   
   )
 };
 

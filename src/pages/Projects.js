@@ -12,7 +12,25 @@ import Nav from "../Components/Nav";
 export default function Projects() {
         return (
 
-                <m.div className="d-flex flex-column" style={{ position: 'fixed', width: '100%', height: '100vh', top: '13vh', backgroundColor: 'turquoise' }}>
+                <div className="d-flex flex-column" style={{ position: 'fixed', width: '100%', height: '100vh', top: '13vh', backgroundColor: 'turquoise' }}>
+                        <m.div className="slide-in"
+                initial={{ scaleY: 0}} exit={{scaleY: 1}}
+                animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
+               />
+              <div sx={{position: "relative", width: '100%', height: '100%'}}>
+<m.div initial={{ scaleX: 1 }}    animate={{ scaleX: 0, transition: { duration: 0.4 }}}  
+  // exit={{ scaleX: 1, transition: { duration: 0.8 }}} 
+style={{
+        originX: 0,
+        backgroundColor: 'black',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        bottom: 0,
+        right: 0,
+        zIndex: 2,
+      }}/>
+    </div>
                         {<Nav />}
 <div className="placeholder" style={{top: '50px', backgroundColor: 'turquoise', position: 'fixed', height:''}}>
 
@@ -113,7 +131,7 @@ export default function Projects() {
                         </div>
 
 
-                </m.div>
+                </div>
 
 
 
