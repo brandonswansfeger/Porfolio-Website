@@ -12,8 +12,9 @@ const AboutMe = (props) => {
                 initial={{ scaleY: 0}} exit={{scaleY: 1}}
                 animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
                /> */}
-      <div sx={{position: "relative", width: '100%', height: '100%'}}>
-<m.div initial={{ scaleX: 1,  animationDelay: '1s' }}    animate={{ scaleX: 0, transition: { duration: 4 }, animationDelay: '2s'}} 
+ <div sx={{position: "relative", width: '100%', height: '100%'}}>
+<m.div initial={{ scaleX: 1,  animationDelay: '1s' }}  
+  // animate={{ scaleX: 0, transition: { duration: 4 }, animationDelay: '2s'}} 
 // exit={{scaleX: 1, transition: { duration: 10 }, animationDelay: '2s' }}  
  
 style={{
@@ -25,17 +26,18 @@ style={{
         bottom: 0,
         right: 0,
         zIndex: 80,
+        pointerEvents: 'none',
       }}>
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise'}} animate={{animation: 'fadeOutLeftBig .3s linear .1s', animationFillMode: 'both' }} />
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise'}}  animate={{animation: 'fadeOutLeftBig .3s linear .2s', animationFillMode: 'both'}} />
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise'}}  animate={{animation: 'fadeOutLeftBig .3s linear .3s', animationFillMode: 'both'}} />
-      <m.div className="motionRows"  style={{backgroundColor: 'turquoise'}} animate={{animation: 'fadeOutLeftBig .3s linear .4s', animationFillMode: 'both' }} />
-      <m.div className="motionRows"style={{backgroundColor: 'turquoise'}} animate={{animation: 'fadeOutLeftBig .3s linear .5s', animationFillMode: 'both' }} />
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise'}} animate={{animation: 'fadeOutLeftBig .3s linear .6s', animationFillMode: 'both' }} />
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise'}} animate={{animation: 'fadeOutLeftBig .3s linear .7s', animationFillMode: 'both' }} />
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise'}}  animate={{animation: 'fadeOutLeftBig .3s linear .8s', animationFillMode: 'both' }} />
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise'}} animate={{animation: 'fadeOutLeftBig .3s linear .9s', animationFillMode: 'both' }} />
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise'}} animate={{animation: 'fadeOutLeftBig .3s linear 1.0s', animationFillMode: 'both' }} />
+      <m.div className="motionRows" style={{backgroundColor: 'black', border: '1px solid turquoise'}} animate={{animation: 'animateTest 1s linear .1s', animationFillMode: 'both', pointerEvents: 'none' }} />
+      <m.div className="motionRows" style={{backgroundColor: 'black', border:'1px solid turquoise'}}  animate={{animation: 'animateTest 1s linear .3s', animationFillMode: 'both', pointerEvents: 'none' }} />
+      <m.div className="motionRows" style={{backgroundColor: 'black', border:'1px solid turquoise'}}  animate={{animation: 'animateTest 1s linear .5s', animationFillMode: 'both', pointerEvents: 'none' }} />
+      <m.div className="motionRows"  style={{backgroundColor: 'black', border:'1px solid turquoise'}} animate={{animation: 'animateTest 1s linear .7s', animationFillMode: 'both', pointerEvents: 'none'  }} />
+      <m.div className="motionRows"style={{backgroundColor: 'black', border:'1px solid turquoise'}} animate={{animation: 'animateTest 1s linear .9s', animationFillMode: 'both', pointerEvents: 'none'  }} />
+      <m.div className="motionRows" style={{backgroundColor: 'black', border:'1px solid turquoise'}} animate={{animation: 'animateTest 1s linear 1.1s', animationFillMode: 'both', pointerEvents: 'none'  }} />
+      <m.div className="motionRows" style={{backgroundColor: 'black', border:'1px solid turquoise'}} animate={{animation: 'animateTest 1s linear 1.3s', animationFillMode: 'both', pointerEvents: 'none'  }} />
+      <m.div className="motionRows" style={{backgroundColor: 'black', border:'1px solid turquoise'}}  animate={{animation: 'animateTest 1s linear 1.5s', animationFillMode: 'both', pointerEvents: 'none'  }} />
+      <m.div className="motionRows" style={{backgroundColor: 'black', border:'1px solid turquoise'}} animate={{animation: 'animateTest 1s linear 1.7s', animationFillMode: 'both', pointerEvents: 'none'  }} />
+      <m.div className="motionRows" style={{backgroundColor: 'black', border:'1px solid turquoise'}} animate={{animation: 'animateTest 1s linear 1.9s', animationFillMode: 'both', pointerEvents: 'none'  }} />
       <m.div/>
     </m.div>
     </div>
