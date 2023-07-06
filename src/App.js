@@ -15,11 +15,8 @@ function App() {
 return (
   // {loading ? (
 <div className="App">
-  <div className="MainBody d-flex flex-column justify-content-start h-100 w-100">
-  {/* <Nav /> */}
+    
 <AnimatedRoutes />
-  </div>
-
    </div>
   
   );
