@@ -24,8 +24,8 @@ function Contact() {
                 initial={{ scaleY: 0}} exit={{scaleY: 1}}
                 animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
                /> */}
-<div sx={{position: "relative", width: '100%', height: '100%'}}>
-<m.div initial={{ scaleX: 1,  animationDelay: '1s' }}  
+<div sx={{position: "relative", width: '100%', height: '100%', pointerEvents: 'none'}}>
+<m.div initial={{ scaleX: 1,  animationDelay: '1s', pointerEvents: 'none' }}  
   // animate={{ scaleX: 0, transition: { duration: 4 }, animationDelay: '2s'}} 
 // exit={{scaleX: 1, transition: { duration: 10 }, animationDelay: '2s' }}  
  

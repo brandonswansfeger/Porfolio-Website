@@ -1,6 +1,6 @@
 import React from "react";
 // import Nav from "../Components/Nav";
-import { motion as m } from  'framer-motion';
+// import { motion as m } from  'framer-motion';
 import { NavLink } from "react-router-dom";
 import Nav from "../Components/Nav";
 
@@ -14,8 +14,8 @@ export default function Main() {
                 initial={{ scaleY: 0}} exit={{scaleY: 1}}
                 animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
                />              */}
-      <div sx={{position: "relative", width: '100%', height: '100%'}}>
-<m.div initial={{ scaleX: 1,  animationDelay: '10s' }}    animate={{ scaleX: 0, transition: { duration: 10 }, animationDelay: '3s'}}  
+      {/* <div sx={{position: "relative", width: '100%', height: '100%'}}> */}
+{/* <m.div initial={{ scaleX: 1,  animationDelay: '10s' }}    animate={{ scaleX: 0, transition: { duration: 10 }, animationDelay: '3s'}}  
   // exit={{ scaleX: 1, transition: { duration: 0.8 }}} 
 style={{
         originX: 0,
@@ -39,7 +39,7 @@ style={{
       <m.div className="motionRows" animate={{animation: 'fadeOutLeftBig 1s linear 1.4s', animationFillMode: 'both' }}/>
       <m.div/>
     </m.div>
-    </div>
+    </div> */}
    {<Nav />}
       <div className="placeholder">
            

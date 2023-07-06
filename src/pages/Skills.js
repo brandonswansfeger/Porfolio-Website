@@ -13,8 +13,8 @@ const Skills = (props) => {
                 initial={{ opacity: 0, pointerEvents: 'none'}} exit={{opacity:1, animationDuration: '1s'}}
                 
                 /> */}
- <div sx={{position: "relative", width: '100%', height: '100%'}}>
-<m.div initial={{ scaleX: 1,  animationDelay: '1s' }}    animate={{ scaleX: 0, transition: { duration: 5 }, animationDelay: '2s'}}  
+ <div sx={{position: "relative", width: '100%', height: '100%', pointerEvents: 'none'}}>
+<m.div initial={{ scaleX: 1,  animationDelay: '0s', pointerEvents: 'none'}}    animate={{ scaleX: 0, transition: { duration: 3 }, animationDelay: '0s'}}  
   // exit={{ scaleX: 1, transition: { duration: 0.8 }}} 
 style={{
         originX: 0,
@@ -26,16 +26,16 @@ style={{
         right: 0,
         zIndex: 80,
       }}>
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid blue'}}  animate={{animation: 'fadeOutLeftBig 1s linear .2s', animationFillMode: 'both' }}/>
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid blue'}}  animate={{animation: 'fadeOutLeftBig 1s linear .4s', animationFillMode: 'both'}}/>
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid blue'}}  animate={{animation: 'fadeOutLeftBig 1s linear .6s', animationFillMode: 'both'}}/>
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise', fontSize: '80px', fontFamily:'Federo', height: '13%'}} animate={{animation: 'fadeOutLeftBig .3s linear 1.2s', animationFillMode: 'both' }} />
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid blue'}}  animate={{animation: 'fadeOutLeftBig 1s linear 1.0s', animationFillMode: 'both' }}/>
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid blue'}}  animate={{animation: 'fadeOutLeftBig 1s linear 1.2s', animationFillMode: 'both' }}/>
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid blue'}}  animate={{animation: 'fadeOutLeftBig 1s linear 1.4s', animationFillMode: 'both' }}/>
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid blue'}}  animate={{animation: 'fadeOutLeftBig 1s linear 1.0s', animationFillMode: 'both' }}/>
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid blue'}}  animate={{animation: 'fadeOutLeftBig 1s linear 1.2s', animationFillMode: 'both' }}/>
-      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid turquoise'}}  animate={{animation: 'fadeOutLeftBig 1s linear 1.4s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid blue'}}  animate={{animation: 'slideOutLeft 1s linear .1s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid blue'}}  animate={{animation: 'slideOutLeft 1s linear .3s', animationFillMode: 'both'}}/>
+      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid blue'}}  animate={{animation: 'slideOutLeft 1s linear .5s', animationFillMode: 'both'}}/>
+      <m.div className="motionRows" style={{backgroundColor: 'turquoise', fontSize: '80px', fontFamily:'Federo', height: '13%'}} animate={{animation: 'slideOutLeft 1s linear .7s', animationFillMode: 'both' }} />
+      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid blue'}}  animate={{animation: 'slideOutLeft 1s linear .9s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid blue'}}  animate={{animation: 'slideOutLeft 1s linear 1.1s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid blue'}}  animate={{animation: 'slideOutLeft 1s linear 1.3s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid blue'}}  animate={{animation: 'slideOutLeft 1s linear 1.5s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid blue'}}  animate={{animation: 'slideOutLeft 1s linear 1.7s', animationFillMode: 'both' }}/>
+      <m.div className="motionRows" style={{backgroundColor: 'turquoise', border: '2px solid turquoise'}}  animate={{animation: 'slideOutLeft 1s linear 1.9s', animationFillMode: 'both' }}/>
       <m.div/>
     </m.div>
     </div>

@@ -25,7 +25,7 @@ function AnimatedRoutes() {
 const location = useLocation();
   
 return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence exitBeforeEnter>
 <Routes location={location} key={location.pathname}>
     <Route exact path="/" element={<Main/>} />
     <Route path="/aboutme" element={<AboutMe/>} />
