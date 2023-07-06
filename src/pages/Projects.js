@@ -12,7 +12,7 @@ import Nav from "../Components/Nav";
 export default function Projects() {
         return (
 
-                <div className="d-flex flex-column" style={{ position: 'fixed', width: '100%', backgroundColor: 'turquoise' }}>
+                <div className="d-flex flex-column" style={{ position: 'fixed', width: '100%', backgroundColor: 'turquoise', margin: 0, minHeight: '100vh', padding: 0 }}>
                         {/* <m.div className="slide-in"
                 initial={{ scaleY: 0}} exit={{scaleY: 1}}
                 animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
@@ -53,10 +53,8 @@ style={{
  <p style={{ fontFamily: 'Federo', width: '100%', fontSize: '50px', color: 'black', position: 'relative', paddingLeft: 'auto', paddingRight: 'auto', textAlign: 'center', lineHeight: '1', backgroundColor: 'turquoise', zIndex: 1, marginTop: '5rem', paddingTop: '2rem' }}>Projects</p>
                        
 
-                        <div className="ProjectsBody sibling-fade pb-5 d-flex flex-wrap justify-content-around" style={{overflow: 'auto',height: '70vh'}}>
-                                <div className="placeholder" style={{height: '50px'}}>
-
-                                </div>
+                        <div className="ProjectsBody sibling-fade pb-5 d-flex flex-wrap justify-content-center" style={{overflow: 'auto', marginTop:'2rem', maxHeight: '80vh', paddingBottom: '2rem'}}>
+                              
                                 <div className="ProjectCard">
                                         <div style={{ width: '100%', marginTop: '10px', backgroundColor: 'white', borderRadius: '5px', marginBottom: '15px' }}>
                                                 <p className="Text" style={{ textAlign: 'center' }}> Python | Django | Matplotlib | Pandas | PostgreSQL </p>
