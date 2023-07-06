@@ -56,19 +56,19 @@ style={{
            
             <div className="NavBar2 d-flex flex-wrap justify-content-center" style={{ marginBottom: '20vh', width: '100%', maxWidth: '1000px', marginRight: 'auto', marginLeft: 'auto', height: '50px', marginTop: '20px'}}>
                 <NavLink to="/Aboutme/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
-                    <p style={{ backgroundColor: 'transparent', color: 'turquoise', }}>About</p>
+                    <p style={{ backgroundColor: 'transparent', color: 'turquoise', margin: 'auto' }}>About</p>
                 </NavLink>
                 <NavLink to="/Work/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
-                    <p style={{ backgroundColor: 'transparent', color: 'turquoise' }}>Work</p>
+                    <p style={{ backgroundColor: 'transparent', color: 'turquoise',  margin: 'auto'  }}>Work</p>
                 </NavLink>
                 <NavLink to="/Projects/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
-                    <p style={{ backgroundColor: 'transparent', color: 'turquoise' }}>Projects</p>
+                    <p style={{ backgroundColor: 'transparent', color: 'turquoise',  margin: 'auto'  }}>Projects</p>
                 </NavLink>
                 <NavLink to="/Skills/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
-                    <p style={{ backgroundColor: 'transparent', color: 'turquoise' }}>Skills</p>
+                    <p style={{ backgroundColor: 'transparent', color: 'turquoise',  margin: 'auto'  }}>Skills</p>
                 </NavLink>
                 <NavLink to="/Contact/" className="ButtonBorder2 style={{ minWidth: '150px' }}">
-                    <p style={{ backgroundColor: 'transparent', color: 'turquoise' }}>Contact</p>
+                    <p style={{ backgroundColor: 'transparent', color: 'turquoise',  margin: 'auto'  }}>Contact</p>
                 </NavLink>
                </div> 
                </div>
