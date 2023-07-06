@@ -6,29 +6,29 @@ import { NavLink } from 'react-router-dom'
 
 const Nav = (props) => {
   return (
-    <div className="NavWrapper header" style={{position:'fixed', top: '0px', right: '0px', pointerEvents: 'auto'}}>
+    <div className="NavWrapper header" style={{top: '0%', right: '0px', pointerEvents: 'auto', backgroundColor:props.color, color:props.outline, marginBottom:props.bottom}}>
 
  {/* <div className="NavBar" style={{height:'40px', justifyContent:'flex-end', flexWrap:'nowrap', alignSelf: 'flex-start'}}> */}
      <NavLink to="/" className="ButtonBorder navButton" activeClassName="is-active">
-    <span style={{ backgroundColor:'transparent', color:'turquoise'}}>Home</span>
+    <span style={{ backgroundColor:'transparent', color:props.outline}}>Home</span>
     </NavLink> 
 
     
    
     <NavLink to="/Aboutme/" className="ButtonBorder navButton" activeClassName="is-active">
-      <span style={{ backgroundColor:'transparent', color:'turquoise'}}>About</span>
+      <span style={{ backgroundColor:'transparent',color:props.outline}}>About</span>
     </NavLink>
     <NavLink to="/Workcopy/"className="ButtonBorder navButton" activeClassName="is-active">
-    <span style={{ backgroundColor:'transparent', color:'turquoise'}}>Work</span>
+    <span style={{ backgroundColor:'transparent', color:props.outline}}>Work</span>
     </NavLink>
     <NavLink to="/Projects/" className="ButtonBorder navButton" activeClassName="is-active">
-    <span style={{ backgroundColor:'transparent', color:'turquoise'}}>Projects</span>
+    <span style={{ backgroundColor:'transparent', color:props.outline}}>Projects</span>
     </NavLink>
     <NavLink to="/Skills/"className="ButtonBorder navButton" activeClassName="is-active">
-    <span style={{ backgroundColor:'transparent', color:'turquoise'}}>Skills</span>
+    <span style={{ backgroundColor:'transparent', color:props.outline}}>Skills</span>
     </NavLink>
     <NavLink to="/Contact/" className="ButtonBorder navButton" activeClassName="is-active">
-    <span  style={{ backgroundColor:'transparent', color:'turquoise'}}>Contact</span>
+    <span  style={{ backgroundColor:'transparent', color:props.outline}}>Contact</span>
     </NavLink>
 
     

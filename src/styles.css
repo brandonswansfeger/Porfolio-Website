@@ -1,7 +1,8 @@
 
 
 Body {
-    background-color: transparent;
+    background-color: black;
+    height: 100%;
 }
 
 p {
@@ -9,11 +10,7 @@ margin: auto;
 font-size: 12px;
 }
 
-i {
-  margin: 5px;
-  overflow: none;
-  padding: 5px;
-}
+
 
 /* .slick-slide slick-cloned{
   width: 60vw !important;
@@ -89,11 +86,17 @@ padding-top: 3% !important;
 }
 
 .Title > span {
-   font-size:  3vw !important;
+   font-size:  min(12vw, 5rem) !important;
   white-space: nowrap;
 
 
 }
+.projectsTitle {
+  font-size:  min(12vw, 7rem) !important;
+  white-space: nowrap;
+  margin-top: 2rem; 
+}
+
 
 .motionRows {
   width: 100%;
@@ -106,12 +109,12 @@ padding-top: 3% !important;
 .Title {
   /* padding-bottom: 20px !important;  */
   /* padding-top: 3%; */
-  justify-self: start;
+  /* justify-self: start; */
   /* padding-top: 3% !important; */
   /* position: absolute; */
-  width: 28vw !important;
-  margin-bottom: 4rem;
-  margin-top: 5%;
+  /* width: 35vw !important; */
+  margin-bottom: 1rem;
+  margin-top: 2%;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -133,10 +136,26 @@ iframe {
  
 }
 
+
+
+@media screen and (max-width: 900px) and (orientation: portrait) {
+.slick-slider {
+left: -1rem !important;
+}
+
+}
+
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  .slick-slider {
+  left: -1rem !important;
+  }
+  
+  }
+
  .slick-dots {
   margin-left: 10px;
 /* margin-bottom: auto !important; */
-top: -40px;
+top: -3rem;
 position:absolute !important;
 width: 150px !important;
 height: 25px !important;
@@ -161,7 +180,7 @@ font-size: 0 !important;
   margin: 0 10px !important;
   width: 25px !important;
   height: 25px !important;
-  /* background-color: transparent; */
+  background-color: turquoise;
   /* color: turquoise; */
    font-size: 0 !important;
    /* color: white; */
@@ -243,32 +262,37 @@ font-size: 0 !important;
 
 
 .slick-dots >  li > button {
-font-size: 12px !important;
+font-size: 14px !important;
+font-weight: 600;
+/* margin-top: -30px; */
 height: 25px !important;
 width: 25px !important;
-color: white !important;
-background-color: darkblue !important;
+color: black !important;
+background-color: turquoise !important;
+border-top: 3px solid white !important;
+border-left: 3px solid lightgray !important;
+
 /* color: white; */
 }
 
 .slick-dots > li > button:hover {
   border: 1px solid darkblue ;
-  background-color: rgb(61, 177, 165) !important;
-  color: darkblue !important;
+  background-color: darkblue !important;
+  color: turquoise !important;
   /* color: turquoise; */
-  box-shadow: 1px 1px 5px 3px rgb(64, 224, 208, 0.4);
+  /* box-shadow: 1px 1px 5px 3px rgb(64, 224, 208, 0.4); */
   /* background-color:; */
  
 }
 
 
-.slick-active button {
+.slick-active > li > button {
   
   /* border: 1px solid darkblue !important; */
-  background-color: turquoise !important;
-  color: darkblue !important;
+  color: turquoise !important;
+  background-color: darkblue !important;
   /* color: turquoise; */
-  box-shadow: 0px 1px 6px 2px rgb(64, 224, 208, 1);
+  /* box-shadow: 0px 1px 6px 2px rgb(64, 224, 208, 1); */
   /* background-color:; */
  
 }
@@ -301,7 +325,11 @@ background-color: darkblue !important;
   /* margin-left: 10%;
   margin-right: 10%; */
   justify-content: space-evenly;
-  max-width: 600px;
+  max-width: 610px;
+  width: 60%;
+  overflow-y: auto;
+  
+  min-width: 350px
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -317,24 +345,53 @@ background-color: darkblue !important;
   color: turquoise !important;
 }
 
-.MainPageBody {
-    display: flex;
-    flex-direction: inline;
-    height: 100vh;
+.MainBody {
+    /* display: flex; */
+    /* flex-direction: inline; */
+    height: 250%;
+    width:auto;
     background-color: black;
 }
 
-.MainBody {
+/* .MainBody {
   background-color: black;
+  height: 150%;
 
+
+} */
+
+i {
+  width: 21%;
+  min-width: 50px;
+  margin: 5px;
+  padding: 2px;
 }
+
 
 .SkillsBody {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: black;
+  justify-content: start;
+  padding-top: 6rem;
+  /* padding-bottom: 6em; */
+  background-color: rgb(1, 22, 59);
   animation: fadeInDownBig 2s ease 2s 2s;
+  height: 100vh;
+  width: 100vw;
+  /* overflow: auto; */
+ 
+  }
+
+  .Projects2Body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: turquoise;
+    /* animation: fadeInDownBig 2s ease 2s 2s; */
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
   }
 
 .hideDivBG {
@@ -410,11 +467,13 @@ margin-right: auto !important;
 
 .placeholder {
   /* display: inline-block; */
-  max-height: 100px;
-  height: 50px;
+  /* max-height: 100px; */
+  /* height: 40px; */
   background-color: transparent;
   width: 100%;
-  margin-bottom: 3% !important;
+  /* margin-bottom: 2rem !important; */
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
@@ -434,7 +493,7 @@ margin-right: auto !important;
   width: 100%;
   /* margin-top: 60px; */
   overflow: auto;
-  padding: 1.5rem !important;
+  /* padding: 1.5rem !important; */
  
 }
 
@@ -448,9 +507,9 @@ margin-right: auto !important;
   }
   }
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 900px) and (orientation: landscape) {
     .Title > span {
-     font-size: 7vw !important;
+     font-size: 5vw !important;
      width: 200px;
     }
     }
@@ -458,7 +517,7 @@ margin-right: auto !important;
       .Title {
        /* font-size: 7vw !important; */
        width: 100% !important;
-       padding-left: 2%;
+       /* padding-left: 2%; */
       }
       }
       @media screen and (max-width: 900px) {
@@ -793,24 +852,30 @@ a {
 @media screen and  (max-width: 900px) {
 .NavWrapper {
   width: 100%;
+  min-height: 55px;
+  max-height: 10vh;
   justify-content: space-evenly;
   /* height: 100% !important; */
-  max-height: 100px;
+  /* max-height: 50px; */
   /* min-widt?h: 300px !important; */
   justify-content: center !important;
   display: flex;
   flex-wrap: wrap !important;
+  position: fixed;
 }
 
 }
 @media screen and (min-width: 901px) {
 .NavWrapper {
-  width: 80%;
+  width: 100%;
   right: 0px;
   padding-left: 26%;
+  height: 10vh;
+  max-height: 50px;
+  position: fixed;
   /* float: r
   ight; */
-  height: 100% !important;
+  /* height: 100% !important; */
   max-height: 100px;
   /* min-widt?h: 300px !important; */
   justify-content: flex-end !important;
@@ -830,7 +895,7 @@ a {
     /* flex-wrap: wrap; */
     min-width: 250% !important;
     /* justify-content: center; */
-    /* position: fixed; */
+    position: fixed;
     /* top: 0px; */
 
     /* height: 40px; */
@@ -876,7 +941,7 @@ a {
 .ButtonBorder2 p {
   font-size: 20px;
 }
-.ProjectsBody {   
+/* .ProjectsBody {   
     background-color: turquoise;
     width: 100%;
     display: flex;
@@ -885,14 +950,18 @@ a {
     justify-items: center;
     align-items:center;
     justify-content: space-evenly;
-    padding-top:6rem;
-    height: 84vh;
-    overflow: auto;
-    position: fixed;
-    top:13%;
-  
-}
+    /* padding-top:6rem; */
+    /* height: 84vh; */
+    /* overflow: auto; */
+    /* position: relative */
+       /* top:13%; */
+   
+.projectsContainer {
+  display: flex-wrap;
+  height: calc(100vh- 100px) !important; 
 
+
+}
 
 
 
@@ -1018,7 +1087,7 @@ p.Text2 {
     background-color: white;
     margin-left: auto;
     margin-right: auto;
-    height: 450px;
+    height: 44rem;
     /* min-height: 350px; */
     width: 45%;
     max-width: 375px;

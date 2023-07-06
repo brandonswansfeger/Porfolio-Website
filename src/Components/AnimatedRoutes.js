@@ -13,6 +13,7 @@ import Contact from "../pages/Contact";
 import { Routes } from "react-router";
 import { AnimatePresence  } from "framer-motion";
 import { useLocation } from "react-router/dist";
+// import Projects2 from "../pages/Projects2";
 // import { Switch } from 'react-router-dom':
 
 // import Nav from "../Components/Nav";
@@ -30,7 +31,7 @@ return (
     <Route exact path="/" element={<Main/>} />
     <Route path="/aboutme" element={<AboutMe/>} />
     <Route path="/workcopy" element={<Workcopy/>} />
-    <Route path="/projects" element={<Projects/>} />
+   <Route path="/projects" element={<Projects/>} />
     <Route path="/skills" element={<Skills/>} />
     <Route path="/Contact" element={<Contact/>} />
  </Routes>
