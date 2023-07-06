@@ -8,7 +8,7 @@ import Projects from "../pages/Projects";
 import Main from "../pages/Main";
 import AboutMe from "../pages/AboutMe";
 import Skills from "../pages/Skills";
-import Workcopy from "../pages/Workcopy";
+import Work from "../pages/Work";
 import Contact from "../pages/Contact";
 import { Routes } from "react-router";
 import { AnimatePresence  } from "framer-motion";
@@ -30,7 +30,7 @@ return (
 <Routes location={location} key={location.pathname}>
     <Route exact path="/" element={<Main/>} />
     <Route path="/aboutme" element={<AboutMe/>} />
-    <Route path="/workcopy" element={<Workcopy/>} />
+    <Route path="/work" element={<Work/>} />
    <Route path="/projects" element={<Projects/>} />
     <Route path="/skills" element={<Skills/>} />
     <Route path="/Contact" element={<Contact/>} />

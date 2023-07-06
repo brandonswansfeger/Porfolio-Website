@@ -18,7 +18,7 @@ const Nav = (props) => {
     <NavLink to="/Aboutme/" className="ButtonBorder navButton" activeClassName="is-active">
       <span style={{ backgroundColor:'transparent',color:props.outline}}>About</span>
     </NavLink>
-    <NavLink to="/Workcopy/"className="ButtonBorder navButton" activeClassName="is-active">
+    <NavLink to="/Work/"className="ButtonBorder navButton" activeClassName="is-active">
     <span style={{ backgroundColor:'transparent', color:props.outline}}>Work</span>
     </NavLink>
     <NavLink to="/Projects/" className="ButtonBorder navButton" activeClassName="is-active">
