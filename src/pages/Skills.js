@@ -8,7 +8,7 @@ import { motion as m } from  'framer-motion';
 
 const Skills = (props) => {
   return (
-  <m.div className="SkillsBody pb-5">
+  <div className="SkillsBody pb-5">
     {/* <m.div className="slide-in"
                 initial={{ opacity: 0, pointerEvents: 'none'}} exit={{opacity:1, animationDuration: '1s'}}
                 
@@ -39,12 +39,12 @@ style={{
       <m.div/>
     </m.div>
     </div>
-       {<Nav />}
+       {<Nav  outline={'turquoise'} bottom={'auto'}/>}
       {/* <div> */}
         <div className="placeholder">
-           
+            <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginBottom:'3%', textAlign:'center'}}>Technical Skills</p>
         </div>
-        <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginTop:'60px', marginBottom:'3%', textAlign:'center'}}>Technical Skills</p>
+       
 <div className="SkillsIcons">
   <i class="devicon-javascript-plain" style={{color:"turquoise", fontSize:'70px'}}></i>
   <i class="devicon-html5-plain-wordmark"style={{color:'white', fontSize:'70px'}}></i>
@@ -64,7 +64,7 @@ style={{
   <i class="devicon-jquery-plain-wordmark" style={{color:'white', fontSize:'70px'}}></i>
  
    </div>
-  </m.div>
+  </div>
   ) 
 };
 

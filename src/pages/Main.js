@@ -40,11 +40,11 @@ style={{
       <m.div/>
     </m.div>
     </div> */}
-   {<Nav />}
+   {<Nav  outline={'turquoise'} />}
       <div className="placeholder">
            
            </div>
-           <div className="mt-auto mb-auto">
+           <div className="mt-auto mb-auto pl-1 pr-1">
  <h1>
                 <div style={{ textAlign: 'center', color: 'turquoise', textTransform: 'capitalize', fontFamily: 'Federo', fontSize: 'min(11vw, 97px)', position: 'relative' }} >
                     brandon swansfeger</div>

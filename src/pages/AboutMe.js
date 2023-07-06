@@ -41,12 +41,12 @@ style={{
       <m.div/>
     </m.div>
     </div>
-              {<Nav />}
+              {<Nav color={'transparent'} outline={'turquoise'}/>}
 
         <div className="placeholder w-100">
 
         </div>
-        <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginTop:'10px', marginBottom:'1%', textAlign:'center'}}>About Me</p>
+        <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginTop:'6rem', marginBottom:'1%', textAlign:'center'}}>About Me</p>
 
       <div className="justify-content-center mr-auto ml-auto" style={{ width: "100%", minWidth: '350px', height: '100%', overflow:'auto', marginTop: '3%', display: 'flex', flexDirection: 'row', flexWrap: 'wrap', marginBottom: '3%'  }}>
 
