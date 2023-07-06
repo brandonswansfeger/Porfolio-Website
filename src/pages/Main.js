@@ -58,7 +58,7 @@ style={{
                 <NavLink to="/Aboutme/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise', }}>About</p>
                 </NavLink>
-                <NavLink to="/Workcopy/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
+                <NavLink to="/Work/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise' }}>Work</p>
                 </NavLink>
                 <NavLink to="/Projects/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
