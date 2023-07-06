@@ -1070,6 +1070,10 @@ p.Text2 {
 	-webkit-animation: animated_text 10s ease-in-out infinite;
 }
 
+NavLink > p {
+  margin: auto;
+}
+
 @keyframes animated_text {
 	0% { background-position: 0px 50%; }
 	50% { background-position: 100% 50%; }
