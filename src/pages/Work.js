@@ -5,7 +5,7 @@ import Nav from '../Components/Nav';
 // import "../../node_modules/video-react/dist/video-react.css";
 // import { Carousel } from '@trendyol-js/react-carousel';
 // import pyramid from "../Components/img/pyramid.mp4";
-// import graphvid from "../Components/img/graphvid.gif";
+// import graphs from "../Components/img/graphs.gif";
 // import coinvid from "../Components/img/coinvid.mp4";
 // import { Player } from 'video-react';
 
@@ -94,23 +94,19 @@ const Work = (props) => {
               title="Image Wheel Spinner"
               allowFullScreen></iframe>
           </div>
-          <div className="videoWrapperresp" >
-            <iframe
-              className='vidPlayerresp'
-              src="https://drive.google.com/file/d/114zbT1ATKq1ToqDFsLn8nFj1Dr8B4rV5/preview" frameborder="0" 
-              title="Coin Flip Match Game"
-              allow="autoplay clipboard-write; encrypted-media; gyroscope; picture-in-picture"              
-              allowFullScreen
-            ></iframe>;
-          </div>
-          <div className="videoWrapperresp" >
-            <iframe
-              className='vidPlayerresp'
-              src="https://drive.google.com/file/d/1_IRXavFTP6Cn1v2-JDbXTr767ulrf_v8/preview" frameborder="0" 
-              title="Multiple Choice Countdoqn Game"
-              allow="autoplay clipboard-write; encrypted-media; gyroscope; picture-in-picture"              
-              allowFullScreen
-            ></iframe>;
+          <div>
+            <img className="pt-5"
+                     src="https://play.vidyard.com/6GNseyMPrKXBtLya2aKSqA.jpg"
+                data-uuid="6GNseyMPrKXBtLya2aKSqA"
+                data-v="4"
+                data-type="inline"
+              />
+                 </div>
+          <div className="pt-0" >
+          <img className="pt-5"
+          //  style={{width: "100%", margin: "auto", display: "block"}}
+   src="https://play.vidyard.com/QHeHrpfK2QkkxRuGFfpR4k.jpg"
+  data-uuid="QHeHrpfK2QkkxRuGFfpR4k"  data-v="4"  data-type="inline"/>
           </div>
         </Slider>
       </div>
