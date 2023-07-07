@@ -1,6 +1,7 @@
 import "./styles.css";
 import React from "react";
 import 'animate.css';
+import './App.css';
 
 import AnimatedRoutes from "./Components/AnimatedRoutes";
 // import Nav from "./Components/Nav";
