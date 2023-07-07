@@ -91,7 +91,7 @@ const Work = (props) => {
               className='vidPlayerresp'
               src="https://drive.google.com/file/d/1Cvm5q_GZps1j1OTlbVDdVqyahtVc57Gl/preview" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              title="Image Wheel Spinner",
+              title="Image Wheel Spinner"
               allowFullScreen></iframe>
           </div>
           <div className="videoWrapperresp" >
