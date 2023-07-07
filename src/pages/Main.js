@@ -1,6 +1,6 @@
 import React from "react";
 // import Nav from "../Components/Nav";
-// import { motion as m } from  'framer-motion';
+import { motion as m } from  'framer-motion';
 import { NavLink } from "react-router-dom";
 import Nav from "../Components/Nav";
 
@@ -44,17 +44,17 @@ style={{
       <div className="placeholder">
            
            </div>
-           <div className="mt-auto mb-auto pl-1 pr-1">
+           <div className="mt-auto mb-auto pl-1 pr-1" exit={{animation: 'fadeOutRightBig 2s ease'}}>
  <h1>
-                <div style={{ textAlign: 'center', color: 'turquoise', textTransform: 'capitalize', fontFamily: 'Federo', fontSize: 'min(11vw, 97px)', position: 'relative' }} >
-                    brandon swansfeger</div>
+                <m.div style={{ textAlign: 'center', color: 'turquoise', textTransform: 'capitalize', fontFamily: 'Federo', fontSize: 'min(11vw, 97px)', position: 'relative' }} exit={{animation: 'fadeOutBigLeft 5s ease'}} >
+                    brandon swansfeger</m.div>
             </h1>
 
-            <h2 className="anim-typewriter Display-1" style={{ fontFamily: 'Open Sans', color: 'white', fontSize: '4.5vw' }}>Software Developer | Full-Stack</h2>
+            <m.h2 className="anim-typewriter Display-1" style={{ fontFamily: 'Open Sans', color: 'white', fontSize: '4.5vw' }} exit={{animation: 'fadeOutBigRight 1s ease'}}>Software Developer | Full-Stack</m.h2>
 
            
            
-            <div className="NavBar2 d-flex flex-wrap justify-content-center" style={{ marginBottom: '20vh', width: '100%', maxWidth: '1000px', marginRight: 'auto', marginLeft: 'auto', height: '50px', marginTop: '20px'}}>
+            <m.div className="NavBar2 d-flex flex-wrap justify-content-center" style={{ marginBottom: '20vh', width: '100%', maxWidth: '1000px', marginRight: 'auto', marginLeft: 'auto', height: '50px', marginTop: '20px'}} exit={{animation: 'fadeOutBigLeft 1s ease .3s'}}>
                 <NavLink to="/Aboutme/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise', margin: 'auto' }}>About</p>
                 </NavLink>
@@ -70,7 +70,7 @@ style={{
                 <NavLink to="/Contact/" className="ButtonBorder2 style={{ minWidth: '150px' }}">
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise',  margin: 'auto'  }}>Contact</p>
                 </NavLink>
-               </div> 
+               </m.div> 
                </div>
         </div>
     )

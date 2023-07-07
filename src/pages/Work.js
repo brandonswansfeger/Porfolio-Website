@@ -33,6 +33,7 @@ const Work = (props) => {
     // speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    
     // fade: true,
     // height: '50vh',
     // width: '50vw'
@@ -42,7 +43,7 @@ const Work = (props) => {
   //  const graphurl = 'https://ik.imagekit.io/sfoz4oajo/graphvid.mp4?updatedAt=1688166060233'
   //   const playerRef = useRef(null);
   return (
-    <div className="workBody" style={{ width: '100%', height: '100%' }}>
+    <div className="workBody" style={{ width: '100%', height: '100%'}}>
 
       {/* <m.div className="slide-in"
         initial={{ opacity: 0, pointerEvents: 'none' }} exit={{ opacity: 1, animationDuration: '1s' }}
@@ -50,32 +51,7 @@ const Work = (props) => {
       /> */}
 
 
-      <div sx={{ position: "relative", width: '100%', height: '100%', pointerEvents: 'none' }}>
-        <m.div initial={{ scaleX: 1, animationDelay: '0s', pointerEvents: 'none' }} animate={{ scaleX: 0, transition: { duration: 5 }, animationDelay: '0s' }}
-          // exit={{ scaleX: 1, transition: { duration: 0.8 }}} 
-          style={{
-            originX: 0,
-            backgroundColor: 'transparent',
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            bottom: 0,
-            right: 0,
-            zIndex: 80,
-          }}>
-          <m.div className="motionRows" style={{ backgroundColor: 'turquoise', boxShadow: '0px 0px 5px 4px rgba(3,7,247,0.84)' }} animate={{ animation: 'slideOutLeft 1s linear .1s', animationFillMode: 'both' }} />
-          <m.div className="motionRows" style={{ backgroundColor: 'turquoise', boxShadow: '0px 0px 5px 4px rgba(3,7,247,0.84)' }} animate={{ animation: 'slideOutLeft 1s linear .3s', animationFillMode: 'both' }} />
-          <m.div className="motionRows" style={{ backgroundColor: 'turquoise', boxShadow: '0px 0px 5px 4px rgba(3,7,247,0.84)' }} animate={{ animation: 'slideOutLeft 1s linear .5s', animationFillMode: 'both' }} />
-          <m.div className="motionRows" style={{ backgroundColor: 'turquoise', boxShadow: '0px 0px 5px 4px rgba(3,7,247,0.84)', fontSize: '80px', fontFamily: 'Federo', height: '13%' }} animate={{ animation: 'slideOutLeft 1s linear .7s', animationFillMode: 'both' }} />
-          <m.div className="motionRows" style={{ backgroundColor: 'turquoise', boxShadow: '0px 0px 5px 4px rgba(3,7,247,0.84)' }} animate={{ animation: 'slideOutLeft 1s linear .9s', animationFillMode: 'both' }} />
-          <m.div className="motionRows" style={{ backgroundColor: 'turquoise', boxShadow: '0px 0px 5px 4px rgba(3,7,247,0.84)' }} animate={{ animation: 'slideOutLeft 1s linear 1.1s', animationFillMode: 'both' }} />
-          <m.div className="motionRows" style={{ backgroundColor: 'turquoise', boxShadow: '0px 0px 5px 4px rgba(3,7,247,0.84)' }} animate={{ animation: 'slideOutLeft 1s linear 1.3s', animationFillMode: 'both' }} />
-          <m.div className="motionRows" style={{ backgroundColor: 'turquoise', boxShadow: '0px 0px 5px 4px rgba(3,7,247,0.84)' }} animate={{ animation: 'slideOutLeft 1s linear 1.5s', animationFillMode: 'both' }} />
-          <m.div className="motionRows" style={{ backgroundColor: 'turquoise', boxShadow: '0px 0px 5px 4px rgba(3,7,247,0.84)' }} animate={{ animation: 'slideOutLeft 1s linear 1.7s', animationFillMode: 'both' }} />
-          <m.div className="motionRows" style={{ backgroundColor: 'turquoise', border: '2px solid turquoise' }} animate={{ animation: 'slideOutLeft 1s linear 1.9s', animationFillMode: 'both' }} />
-          <m.div />
-        </m.div>
-      </div>
+   
       {<Nav color='black' outline='turquoise' bottom={'auto'}/>}
 
       <div className="placeholder">
@@ -90,10 +66,19 @@ const Work = (props) => {
       <div className="videosContainer">
 
         <Slider {...settings}>
+        <div className="videoWrapperresp">
+            <iframe
+              className='vidPlayerresp'
+              src="https://drive.google.com/file/d/1g01GTiDHA9foJXNkrGmBlxn--VhO3ohG/preview"
+              title="YouTube video player"
+
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen></iframe>
+          </div>
           <div className="videoWrapperresp">
             <iframe
               className='vidPlayerresp'
-              src="https://ik.imagekit.io/sfoz4oajo/graph_-_Made_with_Clipchamp.mp4?updatedAt=1688617853932"
+              src="https://drive.google.com/file/d/1XgNKXR01Zodgy0E8ltPQ9oF8cM6ZTKny/preview"
               title="YouTube video player"
 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -104,21 +89,25 @@ const Work = (props) => {
             <iframe
 
               className='vidPlayerresp'
-
-              src="https://ik.imagekit.io/sfoz4oajo/pyramid_-_Made_with_Clipchamp__2_.mp4?updatedAt=1688635406241"
-              title="YouTube video player"
-              // style={{position: 'relative', minHeight:"98vh", top: '-40px'}}
+              src="https://drive.google.com/file/d/1Cvm5q_GZps1j1OTlbVDdVqyahtVc57Gl/preview" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen></iframe>
           </div>
           <div className="videoWrapperresp" >
             <iframe
               className='vidPlayerresp'
-              src="https://ik.imagekit.io/sfoz4oajo/coin_-_Made_with_Clipchamp__3_.mp4?updatedAt=1688635998101"
+              src="https://drive.google.com/file/d/114zbT1ATKq1ToqDFsLn8nFj1Dr8B4rV5/preview" frameborder="0" 
               title="YouTube video player"
-
-
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="autoplay clipboard-write; encrypted-media; gyroscope; picture-in-picture"              
+              allowFullScreen
+            ></iframe>;
+          </div>
+          <div className="videoWrapperresp" >
+            <iframe
+              className='vidPlayerresp'
+              src="https://drive.google.com/file/d/1_IRXavFTP6Cn1v2-JDbXTr767ulrf_v8/preview" frameborder="0" 
+              title="YouTube video player"
+              allow="autoplay clipboard-write; encrypted-media; gyroscope; picture-in-picture"              
               allowFullScreen
             ></iframe>;
           </div>

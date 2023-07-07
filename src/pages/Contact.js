@@ -24,35 +24,7 @@ function Contact() {
                 initial={{ scaleY: 0}} exit={{scaleY: 1}}
                 animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
                /> */}
-<div sx={{position: "relative", width: '100%', height: '100%', pointerEvents: 'none'}}>
-<m.div initial={{ scaleX: 1,  animationDelay: '1s', pointerEvents: 'none' }}  
-  // animate={{ scaleX: 0, transition: { duration: 4 }, animationDelay: '2s'}} 
-// exit={{scaleX: 1, transition: { duration: 10 }, animationDelay: '2s' }}  
- 
-style={{
-        originX: 0,
-        backgroundColor: 'transparent',
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        bottom: 0,
-        right: 0,
-        zIndex: 80,
-        pointerEvents: 'none',
-      }}>
-      <m.div className="motionRows" style={{backgroundColor: 'black', border: '1px solid turquoise'}} animate={{animation: 'animateTest 1s linear .1s', animationFillMode: 'both', pointerEvents: 'none' }} />
-      <m.div className="motionRows" style={{backgroundColor: 'black', border:'1px solid turquoise'}}  animate={{animation: 'animateTest 1s linear .3s', animationFillMode: 'both', pointerEvents: 'none' }} />
-      <m.div className="motionRows" style={{backgroundColor: 'black', border:'1px solid turquoise'}}  animate={{animation: 'animateTest 1s linear .5s', animationFillMode: 'both', pointerEvents: 'none' }} />
-      <m.div className="motionRows"  style={{backgroundColor: 'black', border:'1px solid turquoise'}} animate={{animation: 'animateTest 1s linear .7s', animationFillMode: 'both', pointerEvents: 'none'  }} />
-      <m.div className="motionRows"style={{backgroundColor: 'black', border:'1px solid turquoise'}} animate={{animation: 'animateTest 1s linear .9s', animationFillMode: 'both', pointerEvents: 'none'  }} />
-      <m.div className="motionRows" style={{backgroundColor: 'black', border:'1px solid turquoise'}} animate={{animation: 'animateTest 1s linear 1.1s', animationFillMode: 'both', pointerEvents: 'none'  }} />
-      <m.div className="motionRows" style={{backgroundColor: 'black', border:'1px solid turquoise'}} animate={{animation: 'animateTest 1s linear 1.3s', animationFillMode: 'both', pointerEvents: 'none'  }} />
-      <m.div className="motionRows" style={{backgroundColor: 'black', border:'1px solid turquoise'}}  animate={{animation: 'animateTest 1s linear 1.5s', animationFillMode: 'both', pointerEvents: 'none'  }} />
-      <m.div className="motionRows" style={{backgroundColor: 'black', border:'1px solid turquoise'}} animate={{animation: 'animateTest 1s linear 1.7s', animationFillMode: 'both', pointerEvents: 'none'  }} />
-      <m.div className="motionRows" style={{backgroundColor: 'black', border:'1px solid turquoise'}} animate={{animation: 'animateTest 1s linear 1.9s', animationFillMode: 'both', pointerEvents: 'none'  }} />
-      <m.div/>
-    </m.div>
-    </div>
+
       {<Nav  outline={'turquoise'}/>}
     <div style={{display:'flex', flexDirection:'column', justifyContent:'start',alignItems:'center', height:'100vh', paddingBottom: '10%'}}>
     <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginTop:'60px', marginBottom:'3%'}}>Contact Me</p>
