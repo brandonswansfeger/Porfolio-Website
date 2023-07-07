@@ -4,7 +4,7 @@ import ContactForm from "../Components/ContactForm";
 import LinkedIn from "../Components/img/LinkedIn.PNG";
 import Github from "../Components/img/Github.PNG";
 import Nav from "../Components/Nav";
-import { motion as m } from  'framer-motion';
+// import { motion as m } from  'framer-motion';
 
 function Contact() {
   // useEffect(() => {

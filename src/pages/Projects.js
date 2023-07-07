@@ -3,7 +3,7 @@ import mobilecovid from "../Components/img/mobilecovid.PNG";
 import tfrgdpcombo from "../Components/img/tfrgdpcombo.PNG";
 import comboaddme from "../Components/img/comboaddme.PNG";
 // import Project2 from "../Components/img/Project2.PNG";
-import { motion as m } from  'framer-motion';
+// import { motion as m } from  'framer-motion';
 
 
 // import landingPage from "../Components/img/landingPage.PNG";

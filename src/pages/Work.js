@@ -14,7 +14,7 @@ import Nav from '../Components/Nav';
 import 'animate.css';
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { motion as m } from 'framer-motion';
+// import { motion as m } from 'framer-motion';
 
 
 
