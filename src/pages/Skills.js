@@ -8,7 +8,7 @@ import Nav from "../Components/Nav";
 
 const Skills = (props) => {
   return (
-  <div className="SkillsBody pb-5" style={{backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize:'cover'}}>
+  <div className="SkillsBody pb-5" style={{background: 'linear-gradient(#000428, #004E92)'}}>
     {/* <m.div className="slide-in"
                 initial={{ opacity: 0, pointerEvents: 'none'}} exit={{opacity:1, animationDuration: '1s'}}
                 
