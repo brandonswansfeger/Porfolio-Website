@@ -100,13 +100,16 @@ const Work = (props) => {
                 data-uuid="6GNseyMPrKXBtLya2aKSqA"
                 data-v="4"
                 data-type="inline"
+                alt="Coin game"
               />
                  </div>
           <div className="pt-0" >
           <img className="pt-5"
           //  style={{width: "100%", margin: "auto", display: "block"}}
    src="https://play.vidyard.com/QHeHrpfK2QkkxRuGFfpR4k.jpg"
+  alt="multiple question game"
   data-uuid="QHeHrpfK2QkkxRuGFfpR4k"  data-v="4"  data-type="inline"/>
+          
           </div>
         </Slider>
       </div>
