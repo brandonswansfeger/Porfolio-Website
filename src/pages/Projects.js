@@ -66,7 +66,7 @@ style={{
                                                 </div>
                                                 {/* <p style={{ fontSize: 'medium', lineHeight: '22px', color: 'black', width: '90%', textAlign: 'center', justifySelf: 'top', fontWeight: 'bold', justifyContent: 'flexStart', marginTop: '20px', marginBottom: '-5px' }}></p> */}
                                                 <div style={{backgroundColor: 'white', display: 'flex', flexDirection: 'column', height: '150px',  borderRadius: '0 0 20px 20px', marginBottom: 0}}>
-                                                <p style={{ fontSize: 'small', color: 'black', width: '90%', textAlign: 'center', justifySelf: 'top', justifyContent: 'flexStart', fontWeight: 'light', marginTop: '5px', marginBottom: 'auto', marginBottom: 'auto', marginRight: 'auto', marginLeft: 'auto'  }}>Fetch external data based on user input and display/render bar chart showing GDP & TFR for all countries</p>
+                                                <p style={{ fontSize: 'small', color: 'black', width: '90%', textAlign: 'center', justifySelf: 'top', justifyContent: 'flexStart', fontWeight: 'light', marginTop: '5px', marginBottom: 'auto', marginRight: 'auto', marginLeft: 'auto'  }}>Fetch external data based on user input and display/render bar chart showing GDP & TFR for all countries</p>
                                                 <div className="d-flex flex-row flex-wrap" style={{ marginTop: '3px', marginBottom: '15px' }}>
                                                         <a className="ml-auto ButtonBorder3" href="https://gdb-tfr-chart-7834bdc1c805.herokuapp.com/"
                                                                 rel="noreferrer"

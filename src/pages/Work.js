@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from 'react-slick'
+import Slider from 'react-slick';
 import Nav from '../Components/Nav';
 // import ReactPlayer from 'react-player';
 // import "../../node_modules/video-react/dist/video-react.css";
@@ -70,7 +70,7 @@ const Work = (props) => {
             <iframe
               className='vidPlayerresp'
               src="https://drive.google.com/file/d/1g01GTiDHA9foJXNkrGmBlxn--VhO3ohG/preview"
-              title="YouTube video player"
+              title="Multiple Choice Game Show"
 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen></iframe>
@@ -79,7 +79,7 @@ const Work = (props) => {
             <iframe
               className='vidPlayerresp'
               src="https://drive.google.com/file/d/1XgNKXR01Zodgy0E8ltPQ9oF8cM6ZTKny/preview"
-              title="YouTube video player"
+              title="Customizable Slider Graphs"
 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen></iframe>
@@ -91,13 +91,14 @@ const Work = (props) => {
               className='vidPlayerresp'
               src="https://drive.google.com/file/d/1Cvm5q_GZps1j1OTlbVDdVqyahtVc57Gl/preview" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              title="Image Wheel Spinner",
               allowFullScreen></iframe>
           </div>
           <div className="videoWrapperresp" >
             <iframe
               className='vidPlayerresp'
               src="https://drive.google.com/file/d/114zbT1ATKq1ToqDFsLn8nFj1Dr8B4rV5/preview" frameborder="0" 
-              title="YouTube video player"
+              title="Coin Flip Match Game"
               allow="autoplay clipboard-write; encrypted-media; gyroscope; picture-in-picture"              
               allowFullScreen
             ></iframe>;
@@ -106,7 +107,7 @@ const Work = (props) => {
             <iframe
               className='vidPlayerresp'
               src="https://drive.google.com/file/d/1_IRXavFTP6Cn1v2-JDbXTr767ulrf_v8/preview" frameborder="0" 
-              title="YouTube video player"
+              title="Multiple Choice Countdoqn Game"
               allow="autoplay clipboard-write; encrypted-media; gyroscope; picture-in-picture"              
               allowFullScreen
             ></iframe>;
