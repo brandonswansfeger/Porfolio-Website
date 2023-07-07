@@ -90,7 +90,7 @@ const Work = (props) => {
           </div>
      
           <div className="videoWrapperresp pt-5" >
-            <img width='100%' className='' src={wheels} alt="image wheel spinner game" />
+            <img width='100%' className='' src={wheels} alt="wheel spinner game" />
           </div>
         </Slider>
       </div>
