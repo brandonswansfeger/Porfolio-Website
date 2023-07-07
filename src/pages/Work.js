@@ -4,8 +4,11 @@ import Nav from '../Components/Nav';
 // import ReactPlayer from 'react-player';
 // import "../../node_modules/video-react/dist/video-react.css";
 // import { Carousel } from '@trendyol-js/react-carousel';
-// import pyramid from "../Components/img/pyramid.mp4";
-// import graphs from "../Components/img/graphs.gif";
+import pyramid from "../Components/img/pyramid.gif";
+import graphs from "../Components/img/graphs.gif";
+import coin from "../Components/img/coin.gif";
+import millionaire from "../Components/img/millionaire.gif";
+import wheels from "../Components/img/wheels.gif";
 // import coinvid from "../Components/img/coinvid.mp4";
 // import { Player } from 'video-react';
 
@@ -66,50 +69,28 @@ const Work = (props) => {
       <div className="videosContainer">
 
         <Slider {...settings}>
-        <div className="videoWrapperresp">
-            <iframe
-              className='vidPlayerresp'
-              src="https://drive.google.com/file/d/1g01GTiDHA9foJXNkrGmBlxn--VhO3ohG/preview"
-              title="Multiple Choice Game Show"
+          <div className="videoWrapperresp pt-5">
 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen></iframe>
+            <img className='' width='100%' src={pyramid} alt="multiple choice game"
+            />
           </div>
-          <div className="videoWrapperresp">
-            <iframe
-              className='vidPlayerresp'
-              src="https://drive.google.com/file/d/1XgNKXR01Zodgy0E8ltPQ9oF8cM6ZTKny/preview"
-              title="Customizable Slider Graphs"
-
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen></iframe>
+          <div className="videoWrapperresp pt-5">
+          <img width='100%' className='' src={graphs} alt="customizable slider graphs"
+          />
           </div>
-          <div className="videoWrapperresp" >
-
-            <iframe
-
-              className='vidPlayerresp'
-              src="https://drive.google.com/file/d/1Cvm5q_GZps1j1OTlbVDdVqyahtVc57Gl/preview" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              title="Image Wheel Spinner"
-              allowFullScreen></iframe>
+          <div className="videoWrapperresp pt-5" >
+            <img className='' width='100%' src={coin} alt="category match and reveal game"
+            />
           </div>
-          <div>
-            <img className="pt-5"
-                     src="https://play.vidyard.com/6GNseyMPrKXBtLya2aKSqA.jpg"
-                data-uuid="6GNseyMPrKXBtLya2aKSqA"
-                data-v="4"
-                data-type="inline"
-                alt="Coin game"
-              />
-                 </div>
-          <div className="pt-0" >
-          <img className="pt-5"
-          //  style={{width: "100%", margin: "auto", display: "block"}}
-   src="https://play.vidyard.com/QHeHrpfK2QkkxRuGFfpR4k.jpg"
-  alt="multiple question game"
-  data-uuid="QHeHrpfK2QkkxRuGFfpR4k"  data-v="4"  data-type="inline"/>
-          
+          <div className="videoWrapperresp pt-5">
+
+
+            <img className='' width='100%' src={millionaire} alt="multiple choice game" />
+
+          </div>
+     
+          <div className="videoWrapperresp pt-5" >
+            <img width='100%' className='' src={wheels} alt="image wheel spinner game" />
           </div>
         </Slider>
       </div>
