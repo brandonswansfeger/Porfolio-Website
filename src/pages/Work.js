@@ -1,14 +1,11 @@
 import React from 'react';
-import Slider from 'react-slick';
+import Slider from 'react-slick'
 import Nav from '../Components/Nav';
 // import ReactPlayer from 'react-player';
 // import "../../node_modules/video-react/dist/video-react.css";
 // import { Carousel } from '@trendyol-js/react-carousel';
-import pyramid from "../Components/img/pyramid.gif";
-import graphs from "../Components/img/graphs.gif";
-import coin from "../Components/img/coin.gif";
-import millionaire from "../Components/img/millionaire.gif";
-import wheels from "../Components/img/wheels.gif";
+// import pyramid from "../Components/img/pyramid.mp4";
+// import graphvid from "../Components/img/graphvid.gif";
 // import coinvid from "../Components/img/coinvid.mp4";
 // import { Player } from 'video-react';
 
@@ -69,28 +66,50 @@ const Work = (props) => {
       <div className="videosContainer">
 
         <Slider {...settings}>
-          <div className="videoWrapperresp pt-5">
+        <div className="videoWrapperresp">
+            <iframe
+              className='vidPlayerresp'
+              src="https://drive.google.com/file/d/1g01GTiDHA9foJXNkrGmBlxn--VhO3ohG/preview"
+              title="Multiple Choice Game Show"
 
-            <img className='' width='100%' src={pyramid} alt="multiple choice game"
-            />
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen></iframe>
           </div>
-          <div className="videoWrapperresp pt-5">
-          <img width='100%' className='' src={graphs} alt="customizable slider graphs"
-          />
-          </div>
-          <div className="videoWrapperresp pt-5" >
-            <img className='' width='100%' src={coin} alt="category match and reveal game"
-            />
-          </div>
-          <div className="videoWrapperresp pt-5">
+          <div className="videoWrapperresp">
+            <iframe
+              className='vidPlayerresp'
+              src="https://drive.google.com/file/d/1XgNKXR01Zodgy0E8ltPQ9oF8cM6ZTKny/preview"
+              title="Customizable Slider Graphs"
 
-
-            <img className='' width='100%' src={millionaire} alt="multiple choice game" />
-
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen></iframe>
           </div>
-     
-          <div className="videoWrapperresp pt-5" >
-            <img width='100%' className='' src={wheels} alt="wheel spinner game" />
+          <div className="videoWrapperresp" >
+
+            <iframe
+              className='vidPlayerresp'
+              src="https://drive.google.com/file/d/1Cvm5q_GZps1j1OTlbVDdVqyahtVc57Gl/preview" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              title="Image Wheel Spinner"
+              allowFullScreen></iframe>
+          </div>
+          <div className="videoWrapperresp" >
+            <iframe
+              className='vidPlayerresp'
+              src="https://drive.google.com/file/d/114zbT1ATKq1ToqDFsLn8nFj1Dr8B4rV5/preview" 
+              title="Coin Flip Match Game"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"             
+              allowFullScreen
+            ></iframe>;
+          </div>
+          <div className="videoWrapperresp" >
+            <iframe
+              className='vidPlayerresp'
+              src="https://drive.google.com/file/d/1_IRXavFTP6Cn1v2-JDbXTr767ulrf_v8/preview" 
+              title="Multiple Choice Countdoqn Game"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"             
+              allowFullScreen
+            ></iframe>;
           </div>
         </Slider>
       </div>
