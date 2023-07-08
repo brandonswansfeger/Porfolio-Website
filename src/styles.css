@@ -378,7 +378,7 @@ i {
 .SkillsBody {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   padding-top: 6rem;
   /* padding-bottom: 6em; */
   background-color: rgb(1, 22, 59);
