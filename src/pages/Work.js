@@ -69,7 +69,7 @@ const Work = (props) => {
         <div className="videoWrapperresp">
             <iframe
               className='vidPlayerresp'
-              src="https://drive.google.com/file/d/1g01GTiDHA9foJXNkrGmBlxn--VhO3ohG/preview"
+              src="https://clipchamp.com/watch/hlwbWhuhBUH/embed"
               title="Multiple Choice Game Show"
 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -78,7 +78,7 @@ const Work = (props) => {
           <div className="videoWrapperresp">
             <iframe
               className='vidPlayerresp'
-              src="https://drive.google.com/file/d/1XgNKXR01Zodgy0E8ltPQ9oF8cM6ZTKny/preview"
+              src="https://clipchamp.com/watch/dSxFHlA10jU/embed"
               title="Customizable Slider Graphs"
 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -88,29 +88,28 @@ const Work = (props) => {
 
             <iframe
               className='vidPlayerresp'
-              src="https://drive.google.com/file/d/1Cvm5q_GZps1j1OTlbVDdVqyahtVc57Gl/preview" 
+              src="https://clipchamp.com/watch/ZFJYi5R1vwK/embed" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              title="Image Wheel Spinner"
+              title="multiple choice game"
               allowFullScreen></iframe>
           </div>
           <div className="videoWrapperresp" >
-            <iframe
-              className='vidPlayerresp'
-              src="https://drive.google.com/file/d/114zbT1ATKq1ToqDFsLn8nFj1Dr8B4rV5/preview" 
-              title="Coin Flip Match Game"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"             
-              allowFullScreen
-            ></iframe>;
-          </div>
-          <div className="videoWrapperresp" >
-            <iframe
-              className='vidPlayerresp'
-              src="https://clipchamp.com/watch/KODOrHTA6LW/embed" 
-              title="Multiple Choice Countdoqn Game"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"             
-              allowFullScreen
-            ></iframe>;
-          </div>
+     <iframe
+  className='vidPlayerresp'
+  src="https://clipchamp.com/watch/AL49vjb3xlb/embed" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  title="coins"
+  allowFullScreen></iframe>
+</div>
+<div className="videoWrapperresp" >
+     <iframe
+  className='vidPlayerresp'
+  src="https://clipchamp.com/watch/KODOrHTA6LW/embed" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  title="coins"
+  allowFullScreen></iframe>
+</div>
+        
         </Slider>
       </div>
       <div className="footer">
