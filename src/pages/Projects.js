@@ -12,7 +12,7 @@ import Nav from "../Components/Nav";
 export default function Projects() {
         return (
 
-                <m.div animate={{animation: 'fadeIn 1s'}} exit={{animation: 'fadeOut 1s'}}  className="d-flex flex-column" style={{ position: 'fixed', width: '100%',  background: 'turquoise', margin: 0, minHeight: '100vh', padding: 0 }}>
+                <m.div className="d-flex flex-column" style={{ position: 'fixed', width: '100%',  background: 'turquoise', margin: 0, minHeight: '100vh', padding: 0 }}>
                         {/* <m.div className="slide-in"
                 initial={{ scaleY: 0}} exit={{scaleY: 1}}
                 animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
@@ -56,7 +56,7 @@ style={{
 
          <div className="ProjectsBody d-flex flex-wrap justify-content-center" style={{overflow: 'visible', height: '100%', paddingBottom: '2rem', marginTop: '15rem'}}>
 
-                                        <m.div className="ProjectCard zoom zoomIn" animate={{animation: 'zoomIn 2s'}}>
+                                        <m.div className="ProjectCard zoom" initial={{opacity: '0%'}} animate={{animation: 'zoomIn 2s', opacity: '100%', animationFillMode: 'before'}}>
                                                 <div style={{ width: '100%', marginTop: '10px', borderRadius: '5px', marginBottom: '15px', height: '40px' }}>
                                                         <p className="Text" style={{ textAlign: 'center' }}> Python | Django | Matplotlib | Pandas | PostgreSQL </p>
                                                 </div>
