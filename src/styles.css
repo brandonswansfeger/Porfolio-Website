@@ -339,7 +339,7 @@ opacity: .01 !important;
   justify-content: space-evenly;
   max-width: 610px;
   width: 60%;
-  overflow-y: auto;
+  overflow: visible;
   height: 450px;
   /* max-height: 600px; */
   min-width: 350px
