@@ -448,6 +448,13 @@ i {
   100% {opacity: 0; display: none}
     }
 
+    @keyframes unHideDiv {
+      0% {opacity: 1}
+      100% {opacity: 0; display: none}
+        }
+    
+
+
 div.Container {
     display: flex;
     flex-direction: column;
