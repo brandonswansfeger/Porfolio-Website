@@ -3,7 +3,7 @@ import mobilecovid from "../Components/img/mobilecovid.PNG";
 import tfrgdpcombo from "../Components/img/tfrgdpcombo.PNG";
 import comboaddme from "../Components/img/comboaddme.PNG";
 // import Project2 from "../Components/img/Project2.PNG";
-// import { motion as m } from  'framer-motion';
+import { motion as m } from  'framer-motion';
 
 
 // import landingPage from "../Components/img/landingPage.PNG";
@@ -12,7 +12,7 @@ import Nav from "../Components/Nav";
 export default function Projects() {
         return (
 
-                <div className="d-flex flex-column" style={{ position: 'fixed', width: '100%',  background: 'turquoise', margin: 0, minHeight: '100vh', padding: 0 }}>
+                <m.div animate={{animation: 'fadeIn 1s'}} exit={{animation: 'fadeOut 1s'}}  className="d-flex flex-column" style={{ position: 'fixed', width: '100%',  background: 'turquoise', margin: 0, minHeight: '100vh', padding: 0 }}>
                         {/* <m.div className="slide-in"
                 initial={{ scaleY: 0}} exit={{scaleY: 1}}
                 animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
@@ -56,7 +56,7 @@ style={{
 
          <div className="ProjectsBody d-flex flex-wrap justify-content-center" style={{overflow: 'visible', height: '100%', paddingBottom: '2rem', marginTop: '15rem'}}>
 
-                                        <div className="ProjectCard zoom">
+                                        <m.div className="ProjectCard zoom zoomIn" animate={{animation: 'zoomIn 2s'}}>
                                                 <div style={{ width: '100%', marginTop: '10px', borderRadius: '5px', marginBottom: '15px', height: '40px' }}>
                                                         <p className="Text" style={{ textAlign: 'center' }}> Python | Django | Matplotlib | Pandas | PostgreSQL </p>
                                                 </div>
@@ -84,12 +84,12 @@ style={{
 
 
 
-                                </div>
+                                </m.div>
                             
                                 
 
 
-    <div className="ProjectCard zoom">
+    <m.div animate={{animation: 'zoomIn 2s'}} className="ProjectCard zoom">
                                         <div className="d-flex flex-row justify-content-center" style={{ height: '250px', marginTop: '5%' }}>
                                                 <div style={{ width: '31%', marginTop: 'auto', marginBottom: 'auto', marginLeft: 'auto', minWidth: '113px', height: '40px' }}>
                                                         <p className="Text"> JavaScript | AJAX/API | JSON | HTML | CSS </p>
@@ -117,12 +117,12 @@ style={{
 
                                         </div>
 
-                                </div>
+                                </m.div>
 
 
 
 
-   <div className="ProjectCard zoom">
+   <m.div animate={{animation: 'zoomIn 2s'}} className="ProjectCard zoom">
 
                                         <div style={{ width: '100%', backgroundColor: 'transparent', marginTop: '10px', borderRadius: '5px'}}>
                                                 <p className="Text" style={{ textAlign: 'center', paddingLeft: '2px', paddingRight: '2px', height:'40px' }}>  React JS | Node.JS | Express | MongoDB</p>
@@ -149,7 +149,7 @@ style={{
 
 
 
-                                </div>
+                                </m.div>
 
 
                              
@@ -162,7 +162,7 @@ style={{
                        
 
 
-                </div>
+                </m.div>
 
 
 

@@ -307,6 +307,11 @@ opacity: .01 !important;
 
 
 
+.zoomIn {
+  animation: zoomIn 1.5s 0s;
+}
+
+
 
 
 
@@ -335,9 +340,18 @@ opacity: .01 !important;
   max-width: 610px;
   width: 60%;
   overflow-y: auto;
-  
+  height: 450px;
+  /* max-height: 600px; */
   min-width: 350px
 }
+
+@media screen and (max-width: 700px) and (orientation: landscape) {
+  .SkillsIcons {
+  width: 100vw !important;
+  }
+
+}
+
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: turquoise !important;
@@ -374,6 +388,21 @@ i {
   padding: 2px;
 }
 
+@media screen and (max-width: 900px) and (orientation: landscape) {
+  i {   width: 10%;
+    min-width: 50px;
+    margin: 0px 2px 6px 7px;
+    padding: 3px;
+
+  }
+}
+
+@media screen and (max-width: 1000px) and (orientation: landscape) {
+  .SkillsIcons {   
+        width: 100vw !important;
+
+  }
+}
 
 .SkillsBody {
   display: flex;
@@ -971,6 +1000,11 @@ a {
   justify-content: flex-start;
   align-content: center;
   height: 100vh;
+}
+
+@keyframes unhide {
+  0% {opacity: 0}
+  100% {opacity: 1}
 }
 
 /* .ProjectCard:hover {

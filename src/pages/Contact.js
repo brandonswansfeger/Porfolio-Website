@@ -4,7 +4,8 @@ import ContactForm from "../Components/ContactForm";
 import LinkedIn from "../Components/img/LinkedIn.PNG";
 import Github from "../Components/img/Github.PNG";
 import Nav from "../Components/Nav";
-// import { motion as m } from  'framer-motion';
+// import{motion as m} from ""
+import { motion as m } from  'framer-motion';
 
 function Contact() {
   // useEffect(() => {
@@ -19,7 +20,7 @@ function Contact() {
 
   return (
     
-    <div className="ContactBody"style={{backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize:'cover', width:'100%', minHeight:'100vh', margin: 0, padding: 0}}>
+    <m.div animate={{animation: 'fadeIn 1s'}} className="ContactBody"style={{backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize:'cover', width:'100%', minHeight:'100vh', margin: 0, padding: 0}}>
            {/* <m.div className="slide-in"
                 initial={{ scaleY: 0}} exit={{scaleY: 1}}
                 animate={{ scaleY: 0}} transition={{duration: 1, ease: [.22, 1, 0.36, 1]}}
@@ -35,7 +36,7 @@ function Contact() {
 
     </div>
 </div>
-</div>
+</m.div>
   )
 };
 
