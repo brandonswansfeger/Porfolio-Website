@@ -31,7 +31,7 @@ function Contact() {
     <p style={{fontFamily:'Federo', fontSize:'50px', color:'turquoise', marginTop:'60px', marginBottom:'3%'}}>Contact Me</p>
     <ContactForm />
     <div className="MediaLinks" style={{display:'flex', flexDirection:'inline', justifyContent:'space-evenly', marginTop:'2%'}}>
-      <a className="ImgLink p-1" href="https://www.linkedin.com/in/brandonswansfeger"rel="noopener noreferrer" target="_blank"><img src={LinkedIn} alt="linkedin"/></a>
+      <a className="ImgLink p-1" href="https://www.linkedin.com/in/brandonswansfeger"rel="noopener noreferrer" target="_blank"><img height='100%' width='auto' src={LinkedIn} alt="linkedin"/></a>
       <a className="ImgLink p-1" href="https://github.com/brandonswansfeger"rel="noopener noreferrer" target="_blank"><img  height='100%' width='auto' src={Github} alt="linkedin"/></a>
 
     </div>
