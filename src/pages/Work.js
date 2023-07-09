@@ -68,7 +68,7 @@ const Work = (props) => {
         <Slider {...settings}>
         <div className="videoWrapperresp">
             <iframe
-              className='vidPlayerresp'
+              className='vidPlayerresp pt-4'
               src="https://clipchamp.com/watch/hlwbWhuhBUH/embed"
               title="Multiple Choice Game Show"
 

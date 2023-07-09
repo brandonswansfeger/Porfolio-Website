@@ -455,6 +455,9 @@ i {
     
 
 
+
+
+
 div.Container {
     display: flex;
     flex-direction: column;
@@ -1405,3 +1408,18 @@ h2 {
    .page-content p strong {
      font-weight: 700;
    }
+
+   @media screen and (max-width: 900px) and (orientation: landscape) {
+    /* .videosContainer {
+      width: 100vw !important;
+    }; */
+    .slick-slider {
+      width: 86vw !important;
+    }
+  }
+  
+  @media screen and (max-width: 900px) and (orientation: landscape) {
+    .videosContainer {
+      width: 86vw !important;
+    }
+  }
