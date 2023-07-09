@@ -8,7 +8,7 @@ import Nav from "../Components/Nav";
 
 export default function Main() {
     return (
-        <div style={{ backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize: 'cover', width: '100%', height: '100vh' }} className="d-flex flex-column justify-content-center">
+        <m.div animate={{animation: 'fadeIn 4s'}}  style={{ backgroundImage: "url('https://i.imgur.com/oe0juI2.png')", backgroundSize: 'cover', width: '100%', height: '100vh' }} className="d-flex flex-column justify-content-center">
            
            {/* <m.div className="slide-in"
                 initial={{ scaleY: 0}} exit={{scaleY: 1}}
@@ -44,17 +44,17 @@ style={{
       <div className="placeholder">
            
            </div>
-           <div className="mt-auto mb-auto pl-1 pr-1" exit={{animation: 'fadeOutRightBig 2s ease'}}>
+           <div className="mt-auto mb-auto pl-1 pr-1" >
  <h1>
-                <m.div style={{ textAlign: 'center', color: 'turquoise', textTransform: 'capitalize', fontFamily: 'Federo', fontSize: 'min(11vw, 97px)', position: 'relative' }} exit={{animation: 'fadeOutBigLeft 5s ease'}} >
+                <m.div style={{ textAlign: 'center', color: 'turquoise', textTransform: 'capitalize', fontFamily: 'Federo', fontSize: 'min(11vw, 97px)', position: 'relative' }} >
                     brandon swansfeger</m.div>
             </h1>
 
-            <m.h2 className="anim-typewriter Display-1" style={{ fontFamily: 'Open Sans', color: 'white', fontSize: '4.5vw' }} exit={{animation: 'fadeOutBigRight 1s ease'}}>Software Developer | Full-Stack</m.h2>
+            <m.h2 className="anim-typewriter Display-1" style={{ fontFamily: 'Open Sans', color: 'white', fontSize: '4.5vw' }}>Software Developer | Full-Stack</m.h2>
 
            
            
-            <m.div className="NavBar2 d-flex flex-wrap justify-content-center" style={{ marginBottom: '20vh', width: '100%', maxWidth: '1000px', marginRight: 'auto', marginLeft: 'auto', height: '50px', marginTop: '20px'}} exit={{animation: 'fadeOutBigLeft 1s ease .3s'}}>
+            <m.div className="NavBar2 d-flex flex-wrap justify-content-center" style={{ marginBottom: '20vh', width: '100%', maxWidth: '1000px', marginRight: 'auto', marginLeft: 'auto', height: '50px', marginTop: '20px'}}>
                 <NavLink to="/Aboutme/" className="ButtonBorder2" style={{ minWidth: '150px' }}>
                     <p style={{ backgroundColor: 'transparent', color: 'turquoise', margin: 'auto' }}>About</p>
                 </NavLink>
@@ -72,6 +72,6 @@ style={{
                 </NavLink>
                </m.div> 
                </div>
-        </div>
+        </m.div>
     )
 }

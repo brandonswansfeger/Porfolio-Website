@@ -14,7 +14,7 @@ import Nav from '../Components/Nav';
 import 'animate.css';
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-// import { motion as m } from 'framer-motion';
+import { motion as m } from 'framer-motion';
 
 
 
@@ -43,7 +43,7 @@ const Work = (props) => {
   //  const graphurl = 'https://ik.imagekit.io/sfoz4oajo/graphvid.mp4?updatedAt=1688166060233'
   //   const playerRef = useRef(null);
   return (
-    <div className="workBody" style={{ width: '100%', height: '100%'}}>
+    <m.div animate={{animation: 'fadeInDownBig 2s 2s', animationFillMode:'both'}} className="workBody" style={{ width: '100%', height: '100%'}}>
 
       {/* <m.div className="slide-in"
         initial={{ opacity: 0, pointerEvents: 'none' }} exit={{ opacity: 1, animationDuration: '1s' }}
@@ -115,7 +115,7 @@ const Work = (props) => {
       <div className="footer">
 
       </div>
-    </div>
+    </m.div>
 
 
 
