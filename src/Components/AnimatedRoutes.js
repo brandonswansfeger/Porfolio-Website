@@ -10,9 +10,9 @@ import AboutMe from "../pages/AboutMe";
 import Skills from "../pages/Skills";
 import Work from "../pages/Work";
 import Contact from "../pages/Contact";
-import { Routes } from "react-router-dom";
+import { Routes } from "react-router";
 import { AnimatePresence  } from "framer-motion";
-import { useLocation } from "react-router/dist";
+import { useLocation } from "react-router-dom";
 // import Projects2 from "../pages/Projects2";
 // import { Switch } from 'react-router-dom':
 

@@ -67,7 +67,7 @@ const Work = (props) => {
       <div className="videosContainer">
 
         <Slider {...settings}>
-        <div className="videoWrapperresp" style={{backgroundImage: {resume_background}}}>
+        <div className="videoWrapperresp" id="videoWrapper" style={{backgroundImage: {resume_background}}}>
             <iframe
               className='vidPlayerresp pt-4'
               src="https://clipchamp.com/watch/hlwbWhuhBUH/embed"

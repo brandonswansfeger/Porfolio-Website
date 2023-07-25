@@ -940,6 +940,12 @@ a {
   transform: scale(1.2); 
   }
 
+  #videoWrapper {
+    background-image: url('/src/Components/img/timer.png');
+    background-size: contain;
+    background-position: center;
+  }
+
 @media screen and (orientation: portrait) {
   .videosContainer {
     /* width: auto !important; */
