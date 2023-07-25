@@ -21,7 +21,8 @@ const Skills = (props) => {
         </div>
        
 <div className="SkillsIcons">
-  <m.i  initial={{opacity: 0}} animate={{animation:'fadeInBottomLeft .7s', animationFillMode: 'bpth', opacity: 1}} class="devicon-javascript-plain" style={{color:"turquoise", fontSize:'70px'}}></m.i>
+  <m.i  initial={{opacity: 0}} animate={{animation:'fadeInBottomLeft .7s', animationFillMode: 'bpth', opacity: 1}} class="devicon-javascript-plain icon" style={{color:"turquoise", fontSize:'70px'}}> <span className="popup">JavaScript</span></m.i>
+ 
   <m.i  initial={{opacity: 0}} animate={{animation:'fadeInBottomLeft .7s .2s', animationFillMode: 'both', opacity: 1}} class="devicon-html5-plain-wordmark"style={{color:'white', fontSize:'70px'}}></m.i>
   <m.i class="devicon-css3-plain-wordmark"  initial={{opacity: 0}} animate={{animation:'fadeInBottomLeft .7s .4s', animationFillMode: 'both', opacity: 1, animationDelay: '.1s'}}  style={{color:"turquoise", fontSize:'70px'}}></m.i>
   <m.i class="devicon-react-original-wordmark" style={{color:'white', fontSize:'70px'}}  initial={{opacity: 0}} animate={{animation:'fadeInBottomLeft .7s .4s', animationFillMode: 'both', opacity: 1, animationDelay: '.2s'}} ></m.i>
