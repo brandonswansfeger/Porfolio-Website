@@ -10,7 +10,7 @@ import AboutMe from "../pages/AboutMe";
 import Skills from "../pages/Skills";
 import Work from "../pages/Work";
 import Contact from "../pages/Contact";
-import { Routes } from "react-router";
+import { Routes } from "react-router-dom";
 import { AnimatePresence  } from "framer-motion";
 import { useLocation } from "react-router/dist";
 // import Projects2 from "../pages/Projects2";
