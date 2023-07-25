@@ -436,12 +436,6 @@ i {
   padding: 2px;
 }
 
-#videoWrapper {
-  background-image: url('./Components/img/timer.png') !important;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 @media screen and (max-width: 900px) and (orientation: landscape) {
   i {   width: 10%;
     min-width: 50px;
