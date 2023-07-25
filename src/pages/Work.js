@@ -44,7 +44,7 @@ const Work = (props) => {
   //  const graphurl = 'https://ik.imagekit.io/sfoz4oajo/graphvid.mp4?updatedAt=1688166060233'
   //   const playerRef = useRef(null);
   return (
-    <m.div animate={{animation: 'fadeInUpBig .8s ', animationFillMode:'both'}} className="workBody" style={{ width: '100%', height: '100%'}}>
+    <m.div  className="workBody" style={{ width: '100%', height: '100%'}}>
 
       {/* <m.div className="slide-in"
         initial={{ opacity: 0, pointerEvents: 'none' }} exit={{ opacity: 1, animationDuration: '1s' }}
@@ -60,19 +60,19 @@ const Work = (props) => {
       </div>
 
 
-      <div className='Title' style={{marginTop: '5rem'}} >
+      <m.div className='Title' style={{marginTop: '5rem'}} animate={{animation: 'fadeInRight .6s ', animationFillMode:'both'}} >
         <span style={{ fontFamily: 'Federo', fontSize: '50px', color: 'turquoise', marginBottom: '2%', textAlign: 'center', overflow: 'hidden', opacity: '.8' }}>Work Samples</span>
-      </div>
+      </m.div>
 
-      <div className="videosContainer">
+      <m.div className="videosContainer"animate={{animation: 'fadeInUp .6s ', animationFillMode:'both'}}>
 
         <Slider {...settings}>
-        <div className="videoWrapperresp" style={{backgroundImage: {resume_background}}}>
+        <div className="videoWrapperresp" id="videoWrapper" style={{backgroundImage: {resume_background}}}>
             <iframe
               className='vidPlayerresp pt-4'
               src="https://clipchamp.com/watch/hlwbWhuhBUH/embed"
               title="Multiple Choice Game Show"
-              poster={resume_background}
+              poster="../Components/img/resume_background.jpeg"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen></iframe>
           </div>
@@ -112,7 +112,7 @@ const Work = (props) => {
 </div>
         
         </Slider>
-      </div>
+      </m.div>
       <div className="footer">
 
       </div>
