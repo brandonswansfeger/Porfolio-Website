@@ -15,6 +15,7 @@ import 'animate.css';
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import { motion as m } from 'framer-motion';
+import resume_background from "../Components/img/resume_background.jpeg"
 
 
 
@@ -43,7 +44,7 @@ const Work = (props) => {
   //  const graphurl = 'https://ik.imagekit.io/sfoz4oajo/graphvid.mp4?updatedAt=1688166060233'
   //   const playerRef = useRef(null);
   return (
-    <m.div animate={{animation: 'fadeInDownBig 4s ', animationFillMode:'both'}} className="workBody" style={{ width: '100%', height: '100%'}}>
+    <m.div animate={{animation: 'fadeInUpBig .8s ', animationFillMode:'both'}} className="workBody" style={{ width: '100%', height: '100%'}}>
 
       {/* <m.div className="slide-in"
         initial={{ opacity: 0, pointerEvents: 'none' }} exit={{ opacity: 1, animationDuration: '1s' }}
@@ -52,26 +53,26 @@ const Work = (props) => {
 
 
    
-      {<Nav color='black' outline='turquoise' bottom={'auto'}/>}
+      {<Nav color='black' outline='turquoise' bottom={'auto'} />}
 
       <div className="placeholder">
 
       </div>
 
 
-      <div className='Title' style={{marginTop: '5rem'}}>
+      <div className='Title' style={{marginTop: '5rem'}} >
         <span style={{ fontFamily: 'Federo', fontSize: '50px', color: 'turquoise', marginBottom: '2%', textAlign: 'center', overflow: 'hidden', opacity: '.8' }}>Work Samples</span>
       </div>
 
       <div className="videosContainer">
 
         <Slider {...settings}>
-        <div className="videoWrapperresp">
+        <div className="videoWrapperresp" style={{backgroundImage: {resume_background}}}>
             <iframe
               className='vidPlayerresp pt-4'
               src="https://clipchamp.com/watch/hlwbWhuhBUH/embed"
               title="Multiple Choice Game Show"
-
+              poster={resume_background}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen></iframe>
           </div>
